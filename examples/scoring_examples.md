@@ -81,6 +81,66 @@ Demonstrations of the rubric in action.
 
 ---
 
+## Example 6: Literature Review, AI-Generated (Score: 16/50)
+
+> A growing body of research has explored the relationship between social media and academic outcomes. Smith (2020) found that social media has an effect on students. Jones (2021) found similar results. Lee (2022) also found a relationship. Furthermore, several scholars have noted that this is an important area of study. The existing body of literature suggests that more research is needed.
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Precision | 2 | No specific findings, no synthesis, no mechanism |
+| Voice | 3 | Citation chain without analysis is an AI tell |
+| Flow | 4 | Every sentence follows the same pattern |
+| Economy | 2 | Almost entirely filler |
+| Integrity | 5 | No fabrication, but no substance |
+| **Total** | **16** | **Below threshold — revise** |
+
+---
+
+## Example 7: Literature Review, Humanized (Score: 42/50)
+
+> Research on social media and academic performance has followed two main lines. The first examines time displacement: hours spent on platforms replace study time, with effect sizes ranging from r = -0.21 to -0.38 across studies (Smith, 2020; Jones, 2021; Lee, 2022). The second examines mechanism: social media disrupts attention and sleep, which indirectly affects learning (Chen, 2023; Park et al., 2023). Few studies have examined both lines simultaneously, and none have tested study habits as a mediator — the focus of the present study.
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Precision | 9 | Specific effect sizes, clear categorization |
+| Voice | 8 | Reads like a researcher synthesizing literature |
+| Flow | 8 | Varied structure, logical progression |
+| Economy | 9 | Dense, every sentence advances the argument |
+| Integrity | 8 | Claims are specific and verifiable |
+| **Total** | **42** | **Above threshold — good to go** |
+
+---
+
+## Example 8: Results, AI-Generated (Score: 20/50)
+
+> The results of the analysis are presented in Table 1. The findings indicate that there is a significant relationship between social media usage and academic performance. The data clearly show that students who use social media more tend to have lower grades. The results are statistically significant. Table 2 presents the correlation coefficients. The findings unequivocally demonstrate the negative impact of social media on student outcomes.
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Precision | 2 | No actual numbers, no test statistics |
+| Voice | 4 | "Clearly show," "unequivocally demonstrate" are AI tells |
+| Flow | 5 | Repetitive sentence structure |
+| Economy | 3 | Restates the same point four times |
+| Integrity | 6 | Directionally correct but no data |
+| **Total** | **20** | **Below threshold — revise** |
+
+---
+
+## Example 9: Results, Humanized (Score: 44/50)
+
+> Social media use was negatively correlated with GPA (r = -0.34, p < 0.01; Table 1). Students reporting more than 3 hours of daily use had a mean GPA of 2.8, compared to 3.3 for those using less than 1 hour (t(340) = 4.21, p < 0.001). Study time mediated this relationship: the indirect effect was -0.18 (95% CI: -0.24 to -0.12), while the direct effect was not significant (β = -0.09, p = 0.12; Table 2). The mediation model explained 28% of the variance in GPA.
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Precision | 10 | Specific statistics, confidence intervals, effect sizes |
+| Voice | 8 | Standard academic results reporting |
+| Flow | 8 | Varied structure despite dense data |
+| Economy | 10 | Every word carries weight |
+| Integrity | 8 | Verifiable claims, honest about non-significant direct effect |
+| **Total** | **44** | **Above threshold — excellent** |
+
+---
+
 ## Scoring Calibration Notes
 
 **35 is the threshold.** A score below 35 means the text has significant AI-isms or lacks substance.

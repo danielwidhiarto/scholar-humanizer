@@ -3,7 +3,7 @@ name: scholar-humanizer
 description: Strip AI-generated patterns from academic writing while preserving scholarly conventions like passive voice and hedging.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Scholar Humanizer
@@ -22,7 +22,18 @@ Strip AI-generated patterns from academic writing while preserving scholarly con
 
 ## Process
 
-### 1. Detect Section Type
+### 1. Calibrate Voice (if sample provided)
+
+If the user provides 2-3 paragraphs of their own writing, analyze before rewriting:
+- Sentence length range and average
+- Vocabulary level and field-specific terms
+- Punctuation habits (Oxford comma, semicolons, parenthetical dashes)
+- Transition preferences (formal vs. implicit)
+- First-person usage and formality register
+
+The user's writing sample **outranks** the rules below. Match their habits, not generic academic style. If no sample is provided, use the section-aware defaults.
+
+### 2. Detect Section Type
 
 Identify which academic section the text belongs to. If multiple sections, process each separately.
 
@@ -36,19 +47,27 @@ Identify which academic section the text belongs to. If multiple sections, proce
 | Discussion | Interpretation, limitations, "suggests that" |
 | Conclusion | Summary, future work, "this paper has shown" |
 
-### 2. Apply Section-Specific Rules
+### 3. Apply Section-Specific Rules
 
 Load `rules/academic_voice.md` for the detected section. These override general humanization rules.
 
-### 3. Detect and Remove AI Patterns
+### 4. Detect and Remove AI Patterns
 
-Scan for patterns in `rules/ai_slop.md` and phrases in `references/banned_phrases.md`. Remove them.
+Scan for patterns in `rules/ai_slop.md` and phrases in `references/banned_phrases.md`. Run quick checks from `rules/ai_slop.md#quick-checks`. Remove AI-isms only.
 
-### 4. Rewrite
+### 5. Rewrite
 
-Preserve every claim. Never invent facts. Match the academic register of the field.
+Preserve every claim. Never invent facts. Match the calibrated voice (step 1) or section defaults.
 
-### 5. Score
+### 6. Audit
+
+Before scoring, check:
+- **Fabrication:** Does the rewrite contain any fact, name, date, or citation not in the source? If yes, remove it.
+- **Voice match:** Does the text sound like it belongs in the target field and section? Does it match the user's sample (if provided)?
+- **Remaining AI-isms:** Read aloud. Any sentence that sounds like ChatGPT? Flag and fix.
+- **False positives:** Did the rewrite remove anything that's standard academic convention? If yes, restore it.
+
+### 7. Score
 
 Rate across five dimensions (1-10 each):
 
@@ -62,7 +81,7 @@ Rate across five dimensions (1-10 each):
 
 **Threshold: 35/50.** Below = revise and re-score.
 
-### 6. Output
+### 8. Output
 
 Deliver:
 1. The humanized text

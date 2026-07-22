@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.1.0 — 2026-07-22
+
+### Added
+
+**SKILL.md process improvements:**
+- Voice calibration step (from humanizer): analyze user's writing sample before rewriting
+- Audit step: check for fabrication, voice match, remaining AI-isms, false positives
+- Quick checks reference in step 4
+
+**rules/ai_slop.md — new patterns:**
+- Quick checks (9 heuristics from stop-slop): adverb density, inanimate subject + human verb, 3 same-length sentences, paragraph ending punchy one-liner, vague declarative, distant narrator, meta-joiners, Wh- word openers, em dash
+- "Gap + contribution" formula detection: the most common AI academic structure
+- AI citation pattern detection: generic citations, citation chains, fabricated references, over-citation, under-citation
+
+**rules/academic_voice.md — new section:**
+- False positives: what NOT to flag (bullet points, short paragraphs, formal tone, jargon, long sentences, etc.)
+
+**Examples — new sections:**
+- Literature Review before/after example
+- Results before/after example
+- Literature Review scoring example (AI: 16/50, Humanized: 42/50)
+- Results scoring example (AI: 20/50, Humanized: 44/50)
+
+### Changed
+
+**Consolidated redundancy:**
+- `rules/ai_slop.md` filler phrases table → cross-reference to `references/banned_phrases.md`
+- `rules/ai_slop.md` AI vocabulary kill list → cross-reference to `references/banned_phrases.md`
+
 ## 1.0.0 — 2026-07-22
 
 ### Added

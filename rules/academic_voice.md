@@ -149,3 +149,27 @@ Formal tone is expected. Do not "casualize" academic text.
 - Synthesize, don't repeat.
 - "This study contributes to the literature by..." — acceptable if specific.
 - Future directions should be concrete, not generic.
+
+---
+
+## False Positives — What NOT to Flag
+
+These patterns are normal in academic writing. Do NOT remove them during humanization.
+
+| Pattern | Why it's fine |
+|---------|--------------|
+| Bullet points and numbered lists | Standard for presenting findings, procedures, or criteria |
+| Short paragraphs | Abstracts and results sections are naturally dense and short |
+| Formal tone | Academic writing is supposed to be formal — that's not an AI tell |
+| Technical jargon | Discipline-specific terms are required, not AI-isms |
+| Long sentences (30+ words) | Academic prose often needs complex sentences for precision |
+| Passive voice in Methods | Required by convention — "The samples were collected" is correct |
+| Hedging in Discussion | Expected academic caution — "The results suggest" is appropriate |
+| "Table 1 shows" / "Figure 2 illustrates" | Standard reference format |
+| Citation-heavy sentences | Literature reviews require dense citations |
+| Nominalizations in Methods | "The implementation of" is standard in procedural writing |
+| "Significantly" in statistical context | Has specific statistical meaning (p < 0.05), not an AI tell |
+| One "however" or "furthermore" per paragraph | Normal transition use — flag only when clustered |
+| Consistent terminology (no synonym cycling) | Academic writing favors consistency over variety |
+
+**Rule:** Look for clusters of tells, not isolated instances. One "however" is fine. Three in a paragraph is a pattern. One passive sentence in Methods is correct. Every sentence passive in Discussion is a problem.

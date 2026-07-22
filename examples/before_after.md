@@ -39,6 +39,43 @@ Concrete rewrites organized by section type.
 
 ---
 
+## Literature Review
+
+### Before (AI-generated)
+> A growing body of research has explored the relationship between social media and academic outcomes. Smith (2020) found that social media has an effect on students. Jones (2021) found similar results. Lee (2022) also found a relationship. Chen (2023) examined the issue as well. Furthermore, several scholars have noted that this is an important area of study. The existing body of literature suggests that more research is needed. It is widely recognized that social media plays a significant role in student life.
+
+### After (Humanized)
+> Research on social media and academic performance has followed two main lines. The first examines time displacement: hours spent on platforms replace study time, with effect sizes ranging from r = -0.21 to -0.38 across studies (Smith, 2020; Jones, 2021; Lee, 2022). The second examines mechanism: social media disrupts attention and sleep, which indirectly affects learning (Chen, 2023; Park et al., 2023). Few studies have examined both lines simultaneously, and none have tested study habits as a mediator — the focus of the present study.
+
+**What changed:**
+- "A growing body of research" → deleted
+- Citation chain (Smith found, Jones found, Lee found) → synthesized by finding
+- "Several scholars have noted" → deleted (no citation = filler)
+- "Existing body of literature" → deleted
+- "Widely recognized" → deleted
+- Added actual synthesis and specific contribution
+
+---
+
+## Results
+
+### Before (AI-generated)
+> The results of the analysis are presented in Table 1. The findings indicate that there is a significant relationship between social media usage and academic performance. The data clearly show that students who use social media more tend to have lower grades. The results are statistically significant. Table 2 presents the correlation coefficients. The findings unequivocally demonstrate the negative impact of social media on student outcomes.
+
+### After (Humanized)
+> Social media use was negatively correlated with GPA (r = -0.34, p < 0.01; Table 1). Students reporting more than 3 hours of daily use had a mean GPA of 2.8, compared to 3.3 for those using less than 1 hour (t(340) = 4.21, p < 0.001). Study time mediated this relationship: the indirect effect was -0.18 (95% CI: -0.24 to -0.12), while the direct effect was not significant (β = -0.09, p = 0.12; Table 2). The mediation model explained 28% of the variance in GPA.
+
+**What changed:**
+- "The results of the analysis are presented" → direct reporting
+- "The findings indicate that there is" → state the finding
+- "Clearly show" → deleted (let the data speak)
+- "Statistically significant" → report the actual statistic
+- "Unequivocally demonstrate" → deleted
+- Added specific numbers, test statistics, confidence intervals
+- Reported mediation results (substance the AI version lacked)
+
+---
+
 ## Methods
 
 ### Before (AI-generated)

@@ -4,32 +4,31 @@ These patterns signal AI-generated text. Remove them from academic writing.
 
 ---
 
+## Quick Checks
+
+Fast first-pass heuristics. Run these before the detailed pattern scan. (Adapted from stop-slop.)
+
+| Check | What to find | Fix |
+|-------|-------------|-----|
+| Adverb density | Count -ly words per paragraph. More than 2 is a pattern. | Kill all adverbs except discipline-standard ones ("significantly" in stats is OK). |
+| Inanimate subject + human verb | "The study argues," "The paper claims," "The data suggest" | Name the researcher or use "Results show," "Data indicate." |
+| Three same-length sentences in a row | Metronomic rhythm | Break one sentence's length — shorten or combine. |
+| Paragraph ending on punchy one-liner | "This is significant." "This matters." "This changes everything." | Delete or merge into the preceding sentence. |
+| Vague declarative | "This is important," "The implications are significant," "This is noteworthy" | Name the specific implication or delete. |
+| Distant narrator | "It should be noted that researchers have found..." | State directly: "Researchers found..." |
+| Meta-joiners as paragraph openers | "Furthermore," "Moreover," "Additionally" starting every paragraph | Vary openers: start with the subject, a question, or a concrete detail. |
+| Wh- word sentence openers | Excessive "Which," "Where," "When," "How" starters | Lead with subject or verb instead. |
+| Em dash present | Any em dash (—) or en dash (–) | Replace with comma, parentheses, colon, or period. |
+
+---
+
 ## AI Vocabulary Overuse
 
 LLMs favor specific "smart-sounding" words far more than human writers. Replace with plain equivalents.
 
-**Kill list (always remove):**
-- delve → explore, examine, investigate
-- intricate → complex, detailed, nuanced
-- pivotal → key, important, central
-- tapestry → framework, landscape (or delete)
-- landscape → field, area, domain
-- vibrant → active, dynamic (or delete)
-- foster → promote, support, encourage
-- garner → gain, receive, attract
-- showcase → show, demonstrate, present
-- testament → evidence, indication
-- nuanced → detailed, subtle (or delete if filler)
-- holistic → comprehensive, integrated
-- leverage → use, apply
-- robust → strong, reliable, valid
-- ground-breaking → novel, new, innovative (if actually novel)
+**Always remove:** See `references/banned_phrases.md` → "AI Vocabulary" section for the full kill list with replacements.
 
-**Context-dependent (flag, judge case-by-case):**
-- "it is important to note" — remove unless the next sentence is genuinely surprising
-- "in the realm of" — usually filler, replace with "in"
-- "the advent of" — usually "the introduction of" or "since"
-- "paradigm shift" — only if the shift is actually demonstrated
+**Context-dependent:** See `references/banned_phrases.md` → "Context-Dependent" section for phrases that may be acceptable in some academic contexts.
 
 ---
 
@@ -68,6 +67,23 @@ Short punchy sentences stacked for false gravitas.
 **Before:** "The model works. It is reliable. It is valid. It is ready."
 **After:** "The model is reliable and valid."
 
+### The "Gap + Contribution" Formula
+
+The single most common AI academic writing structure. Nearly every AI-generated introduction follows this template:
+
+**Before:** "Despite extensive research on social media, few studies have examined its impact on academic performance among university students. This paper addresses this gap by proposing a novel framework for understanding this relationship."
+
+**After:** State what you actually did and why it matters. "We measured the relationship between daily social media use and GPA among 342 university students, focusing on study habits as a mediator."
+
+**Signals:**
+- "Despite extensive research on X..."
+- "Few studies have examined..."
+- "This paper addresses this gap..."
+- "This study fills a critical gap in the literature..."
+- "To the best of our knowledge, this is the first study to..."
+
+**Rule:** If the "gap" is real, name the specific missing work. If it's not real, don't invent it. Never use the word "gap" — just state your contribution.
+
 ---
 
 ## Signposting and Meta-Commentary
@@ -104,23 +120,7 @@ AI ends sections and papers with vague uplift.
 
 ## Filler Phrases
 
-Wordy constructions that add nothing.
-
-| Remove | Replace with |
-|--------|-------------|
-| In order to | To |
-| Due to the fact that | Because |
-| At this point in time | Now / Currently |
-| Has the ability to | Can |
-| A large number of | Many |
-| In the event that | If |
-| For the purpose of | For |
-| In light of the fact that | Because / Since |
-| On a regular basis | Regularly |
-| In close proximity to | Near |
-| With regard to | About / Regarding |
-| It is evident that | (Delete — state the evidence) |
-| It should be noted that | (Delete — just note it) |
+Wordy constructions that add nothing. See `references/banned_phrases.md` → "Filler Constructions" for the full list with replacements.
 
 ---
 
@@ -188,3 +188,42 @@ Stacked short sentences for false emphasis.
 
 **Before:** "Across a wide range of disciplines..."
 **After:** Name the disciplines, or say "across disciplines" without the filler adjective.
+
+---
+
+## AI Citation Patterns
+
+AI generates distinctive citation patterns that signal machine writing.
+
+### Generic Citations Without Synthesis
+**Before:** "Smith (2020) found that social media affects students. Jones (2021) found similar results. Lee (2022) also found a relationship."
+**After:** "Multiple studies converge on a negative relationship between social media use and academic performance (Smith, 2020; Jones, 2021; Lee, 2022), though the mechanisms differ."
+
+**Rule:** Citations should synthesize, not list. If three studies found the same thing, say so in one sentence.
+
+### Citation Chains Without Analysis
+**Before:** "Smith (2020) studied social media. Jones (2021) examined Instagram. Lee (2022) looked at TikTok. Chen (2023) analyzed Twitter."
+**After:** "Research has examined platform-specific effects, with studies on Instagram (Jones, 2021), TikTok (Lee, 2022), and Twitter (Chen, 2023) each finding distinct usage patterns."
+
+**Rule:** Group citations by finding, not by author. Don't narrate a bibliography.
+
+### Fabricated Citations
+AI often generates real author names with fake years, titles, or journals. Signs:
+- Citation appears only once and is never discussed again
+- The finding attributed to the citation is suspiciously convenient
+- The year is suspiciously recent (2023-2024)
+- No DOI or URL provided
+
+**Rule:** If you cannot verify a citation exists, flag it for the user. Never fabricate citations during rewrite.
+
+### Over-Citation
+**Before:** "Social media is widely used (Smith, 2020). Students spend time on platforms (Jones, 2021). This affects grades (Lee, 2022)."
+**After:** "Social media use among students is associated with lower grades (Lee, 2022)."
+
+**Rule:** Common knowledge doesn't need citation. Cite claims that are specific, surprising, or contested.
+
+### Under-Citation
+**Before:** "Social media clearly harms academic performance."
+**After:** "Social media use is negatively associated with academic performance (r = -0.34, p < 0.01; Lee, 2022)."
+
+**Rule:** Specific claims need specific evidence. If you state a finding, cite it.
