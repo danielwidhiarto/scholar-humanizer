@@ -28,6 +28,11 @@
 - scripts/validate-package.py — package validation
 - .github/workflows/validate.yml — CI validation
 
-### Inspired by
-- [stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya — scoring rubric approach, phrase/structure detection
-- [humanizer](https://github.com/blader/humanizer) by Siqi Chen — 33 pattern categories, voice calibration, no-fabrication rule, audit loop
+### Background
+
+This project was born from combining two existing AI-writing humanizers:
+
+- **[stop-slop](https://github.com/hardikpandya/stop-slop)** by Hardik Pandya — scoring rubric (5 dimensions × 1-10, threshold 35/50), banned phrases list, structural pattern detection. We adapted the scoring system directly: Precision←Directness, Voice←Authenticity, Flow←Rhythm, Economy←Density, Integrity←Trust.
+- **[humanizer](https://github.com/blader/humanizer)** by Siqi Chen (built on [Wikipedia's "Signs of AI writing" guide](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)) — 33 pattern categories, voice calibration from user samples, no-fabrication rule, audit-rewrite loop. We borrowed the pattern detection approach and the no-fabrication principle.
+
+Both tools are excellent for general prose, but they share one critical flaw for academic writing: they ban passive voice, hedging, and formal transitions — all standard in scholarly work. This skill fixes that with section-aware rules.

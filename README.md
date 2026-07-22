@@ -36,13 +36,15 @@ claude skill add scholar-humanizer
 
 ## Scoring Rubric
 
-| Dimension | Question |
-|-----------|----------|
-| Precision | Specific claims, not vague generalities? |
-| Voice | Reads like a researcher, not a chatbot? |
-| Flow | Varied sentence structure? |
-| Economy | Filler cut, substance kept? |
-| Integrity | All claims preserved, nothing fabricated? |
+Adapted from [stop-slop](https://github.com/hardikpandya/stop-slop)'s scoring system (5 dimensions, 1-10, threshold 35/50), recalibrated for academic writing.
+
+| Dimension | Question | stop-slop equivalent |
+|-----------|----------|---------------------|
+| Precision | Specific claims, not vague generalities? | Directness |
+| Voice | Reads like a researcher, not a chatbot? | Authenticity |
+| Flow | Varied sentence structure? | Rhythm |
+| Economy | Filler cut, substance kept? | Density |
+| Integrity | All claims preserved, nothing fabricated? | Trust |
 
 **Threshold: 35/50.** Below = revise.
 
@@ -59,6 +61,18 @@ examples/
   before_after.md              ← Concrete rewrites per section
   scoring_examples.md          ← Rubric demonstrations
 ```
+
+## Background & Credits
+
+This skill exists because general humanizers are too aggressive for academic writing.
+
+[stop-slop](https://github.com/hardikpandya/stop-slop) by Hardik Pandya — taught us to score writing quality with a rubric (5 dimensions, 1-10, threshold 35/50) and to systematically detect AI phrases and structures. Our scoring system is adapted from stop-slop's approach.
+
+[humanizer](https://github.com/blader/humanizer) by Siqi Chen — taught us to detect 33 AI writing patterns, calibrate voice from user samples, and enforce a no-fabrication rule (never invent facts during rewrite). Built on [Wikipedia's "Signs of AI writing" guide](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).
+
+**The problem both share:** they ban passive voice, hedging, and formal transitions — patterns that are standard (even required) in academic writing. A Methods section that says "The samples were collected" is correct. A general humanizer would rewrite it to "We collected the samples" and break academic convention.
+
+**What this skill adds:** section-aware rules that know the difference between AI slop and academic voice. Passive voice is required in Methods. Hedging is expected in Discussion. Formal transitions are standard everywhere. The skill only removes actual AI-isms, not scholarly conventions.
 
 ## License
 
