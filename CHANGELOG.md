@@ -52,8 +52,6 @@
 
 **Infrastructure**
 - AGENTS.md — agent guidance
-- .claude-plugin/ — Claude Code plugin manifest and marketplace entry
-- agents/openai.yaml — OpenAI-compatible agent config
 - scripts/validate-package.py — package validation
 - .github/workflows/validate.yml — CI validation
 

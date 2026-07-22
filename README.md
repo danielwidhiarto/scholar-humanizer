@@ -8,12 +8,19 @@ General humanizers ban passive voice, hedging, and formal transitions — all st
 
 ## Install
 
-```bash
-# Claude Code
-claude skill add scholar-humanizer
+Copy-paste the repo link into your AI agent. That's it.
 
-# Or copy SKILL.md and the rules/ directory into your project's .claude/skills/
+**Claude Code:**
 ```
+Clone https://github.com/danielwidhiarto/scholar-humanizer and use SKILL.md as a skill.
+```
+
+**Cursor / Windsurf / Other agents:**
+```
+Read the rules from https://github.com/danielwidhiarto/scholar-humanizer — follow SKILL.md, rules/, and references/ when humanizing my academic writing.
+```
+
+**Manual:** Clone or copy `SKILL.md`, `rules/`, `references/`, and `examples/` into your project.
 
 ## What It Does
 

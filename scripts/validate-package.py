@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
-"""Validate Scholar Humanizer's portable package surfaces without external dependencies."""
+"""Validate Scholar Humanizer's package structure without external dependencies."""
 
 from __future__ import annotations
 
-import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILL = (ROOT / "SKILL.md").read_text()
-README = (ROOT / "README.md").read_text()
-PLUGIN = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text())
 
 
 def require(match: re.Match[str] | None, message: str) -> re.Match[str]:
@@ -29,16 +26,11 @@ for nonportable_key in ("compatibility:", "allowed-tools:"):
     if re.search(rf"(?m)^{re.escape(nonportable_key)}", frontmatter):
         raise SystemExit(f"Remove nonportable frontmatter key: {nonportable_key[:-1]}")
 
-# Check version sync
+# Check version
 skill_version = require(
     re.search(r'(?m)^\s+version:\s*["\']([^"\']+)["\']\s*$', frontmatter),
     "SKILL.md metadata.version is missing",
 ).group(1)
-plugin_version = str(PLUGIN.get("version", ""))
-
-versions = {skill_version, plugin_version}
-if len(versions) != 1:
-    raise SystemExit(f"Version mismatch: SKILL.md={skill_version}, plugin.json={plugin_version}")
 
 # Check rule files exist
 rules_dir = ROOT / "rules"
@@ -62,4 +54,4 @@ for example_file in ("before_after.md", "scoring_examples.md"):
 if len(SKILL.splitlines()) > 200:
     raise SystemExit(f"SKILL.md exceeds 200-line portability budget ({len(SKILL.splitlines())} lines)")
 
-print(f"Scholar Humanizer package v{skill_version} is valid")
+print(f"Scholar Humanizer v{skill_version} is valid")

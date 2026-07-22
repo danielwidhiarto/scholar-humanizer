@@ -15,10 +15,7 @@ A portable agent skill for humanizing academic writing. The runtime artifact is 
 - `references/banned_phrases.md` — phrase-level bans, split into always-remove and context-dependent.
 - `examples/before_after.md` — concrete rewrites per section type.
 - `examples/scoring_examples.md` — rubric demonstrations with scored samples.
-- `.claude-plugin/plugin.json` — optional Claude Code plugin manifest.
-- `.claude-plugin/marketplace.json` — optional single-repo marketplace entry.
 - `scripts/validate-package.py` — dependency-free package and synchronization checks.
-- `agents/openai.yaml` — OpenAI-compatible agent config.
 
 ## The maintenance contract
 
@@ -26,7 +23,7 @@ A portable agent skill for humanizing academic writing. The runtime artifact is 
 
 - **Rules:** `rules/academic_voice.md` and `rules/ai_slop.md` define the section-aware behavior. If you add, remove, or renumber rules, update the README and SKILL.md references in the same change.
 - **Banned phrases:** `references/banned_phrases.md` is the phrase-level ban list. Keep it in sync with `rules/ai_slop.md` — if a pattern appears in one, it should be reflected in the other.
-- **Version:** `SKILL.md` frontmatter stores the version under `metadata.version`, `README.md` has a version field, and `.claude-plugin/plugin.json` has a `version` field. Bump them together.
+- **Version:** `SKILL.md` frontmatter stores the version under `metadata.version`. Bump when behavior changes.
 - **Compatibility:** keep install and usage language harness-neutral. The skill should work in any agent harness that can load Markdown skill instructions.
 - **Validation:** run `python3 scripts/validate-package.py` before publishing.
 
