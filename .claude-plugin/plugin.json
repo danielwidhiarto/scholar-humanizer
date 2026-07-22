@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "scholar-humanizer",
+  "version": "1.0.0",
+  "author": {
+    "name": "scholar-humanizer contributors",
+    "url": "https://github.com/scholar-humanizer/scholar-humanizer"
+  },
+  "homepage": "https://github.com/scholar-humanizer/scholar-humanizer",
+  "repository": "https://github.com/scholar-humanizer/scholar-humanizer",
+  "license": "MIT",
+  "keywords": ["writing", "academic", "ai-detection", "humanize", "scholarly", "research"],
+  "description": "Strip AI-generated patterns from academic writing while preserving scholarly conventions like passive voice and hedging."
+}

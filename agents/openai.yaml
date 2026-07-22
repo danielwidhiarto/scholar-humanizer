@@ -1,0 +1,7 @@
+interface:
+  display_name: Scholar Humanizer
+  short_description: Strip AI patterns from academic writing while keeping scholarly conventions
+  default_prompt: |
+    $scholar-humanizer
+
+    Humanize the following academic text. Preserve passive voice in Methods, hedging in Discussion, and formal transitions. Remove AI-isms only. Score the result.
