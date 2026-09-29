@@ -1,12 +1,12 @@
-# Banned Phrases
+# Phrase-Level Review Cues
 
-Two lists: always remove, and context-dependent.
+These phrases are review cues, not universal bans. A match alone does not show that prose is AI-generated or needs rewriting. Keep a phrase when it conveys specific meaning, matches the author's voice, or is required by the target style.
 
 ---
 
-## Always Remove
+## Common Filler Candidates
 
-These phrases are AI tells. Replace or delete every instance.
+Usually revise these when they add no information, repeat a claim, or merely announce a point. Check the surrounding sentence before changing them.
 
 ### Throat-Clearing Openers
 - It is important to note that
@@ -53,24 +53,26 @@ These phrases are AI tells. Replace or delete every instance.
 - The potential is vast
 - The possibilities are endless
 
-### AI Vocabulary (use sparingly or not at all)
+Keep a conclusion or future-work statement when it names a specific, supported implication or research need.
+
+### Formulaic Vocabulary (review in context)
 - delve into
 - intricate relationship
 - tapestry of
 - vibrant field
 - nuanced understanding
 - holistic approach
-- robust framework (unless actually describing robustness testing)
+- robust framework (unless it describes robustness testing)
 - cutting-edge (unless comparing to specific prior work)
-- groundbreaking (unless the contribution is genuinely first)
-- state-of-the-art (same)
-- leveraging (unless talking about actual leverage)
-- fostering (unless talking about actual nurturing)
+- groundbreaking (unless the contribution is genuinely first and supported)
+- state-of-the-art (when not tied to a defined comparison)
+- leveraging (unless describing actual leverage)
+- fostering (unless describing actual nurturing)
 - garnering attention
 - showcasing
 
 ### Filler Constructions
-- In order to → To
+- In order to → To (when purpose is unchanged)
 - Due to the fact that → Because
 - At this point in time → Now
 - Has the ability to → Can
@@ -81,18 +83,18 @@ These phrases are AI tells. Replace or delete every instance.
 - On a regular basis → Regularly
 - In close proximity to → Near
 - With regard to → About
-- In terms of → For / Regarding
+- In terms of → For / Regarding (when meaning is unchanged)
 - As a means of → To / For
-- In the context of → In (or delete)
+- In the context of → In (or delete, if redundant)
 - With respect to → About / For
 
 ---
 
 ## Context-Dependent
 
-These may be acceptable in some academic contexts but are often filler. Judge case-by-case.
+Judge these by section, evidence, author voice, and target guidance.
 
-### Hedging (OK in Discussion, usually filler elsewhere)
+### Hedging
 - It could be argued that
 - One might suggest that
 - It is possible that
@@ -102,9 +104,9 @@ These may be acceptable in some academic contexts but are often filler. Judge ca
 - Perhaps
 - It may be the case that
 
-**Rule:** One hedge per claim is honest. Two or more is hedging about hedging.
+**Rule:** Keep the uncertainty that matches the evidence and section. Review stacked hedges when they make the degree of uncertainty unclear; there is no fixed hedge count.
 
-### Transitions (OK if varied, filler if overused)
+### Transitions
 - Furthermore
 - Moreover
 - In addition
@@ -114,18 +116,18 @@ These may be acceptable in some academic contexts but are often filler. Judge ca
 - Nevertheless
 - Nonetheless
 
-**Rule:** No more than one per paragraph. Vary with topic sentences and logical flow.
+**Rule:** Keep transitions that clarify logic. Repetition is a cue to review, not a fixed per-paragraph limit.
 
-### Academic Framing (OK if specific, filler if generic)
+### Academic Framing
 - The existing body of literature
 - Previous studies have shown
 - A growing body of research
 - The current state of knowledge
 - Extensive research has been conducted
 
-**Rule:** Follow with actual citations. Without citations, these are filler.
+**Rule:** Check whether a literature claim is supported by available sources. Missing citations may merit a note, but do not invent or insert references.
 
-### Emphasis (OK sparingly, AI overuses)
+### Emphasis
 - Importantly
 - Notably
 - Significantly
@@ -134,4 +136,15 @@ These may be acceptable in some academic contexts but are often filler. Judge ca
 - Crucially
 - Fundamentally
 
-**Rule:** If the sentence is important, it doesn't need "importantly." If it's not, "importantly" won't save it.
+**Rule:** Keep emphasis when it adds a precise qualification or reflects the field's style. Otherwise, remove empty emphasis.
+
+### Contrast, Lists, Short Sentences, and Dashes
+
+- Keep a contrast when it distinguishes real methods, hypotheses, results, or interpretations; review only empty or artificial oppositions.
+- Preserve numbering for findings and ordered steps.
+- Prefer prose to related unnumbered bullets in running narrative when all claims remain clear; keep bullets for independent items, scannability, or required formats.
+- Convert arrow-linked fragments to sentences when they are intended as prose; keep arrows in diagrams, equations, code, and intentional workflows.
+- Keep three-item lists that reflect actual categories or evidence; review padding added only to create a triad.
+- Keep short factual sentences and specific closers that add a result or qualification.
+- Preserve em/en dashes when they match the author's style or form part of a range, symbol, math, or file syntax.
+- Do not treat passive voice, an adverb, a hedge, or a formal transition as a phrase-level ban; apply the section guidance in `rules/academic_voice.md`.

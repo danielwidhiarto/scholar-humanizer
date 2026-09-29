@@ -1,40 +1,40 @@
-# AI Slop — Patterns to Remove
+# AI Slop — Patterns to Review
 
-These patterns signal AI-generated text. Remove them from academic writing.
+These patterns can signal formulaic or unhelpful prose, but none proves AI authorship. Treat each as a review cue, not a hard ban: revise only when the wording is empty, repetitive, misleading, or inconsistent with the section, evidence, or supplied voice.
 
 ---
 
 ## Quick Checks
 
-Fast first-pass heuristics. Run these before the detailed pattern scan. (Adapted from stop-slop.)
+Use these as a first-pass review, then check the surrounding argument and source.
 
-| Check | What to find | Fix |
-|-------|-------------|-----|
-| Adverb density | Count -ly words per paragraph. More than 2 is a pattern. | Kill all adverbs except discipline-standard ones ("significantly" in stats is OK). |
-| Inanimate subject + human verb | "The study argues," "The paper claims," "The data suggest" | Name the researcher or use "Results show," "Data indicate." |
-| Three same-length sentences in a row | Metronomic rhythm | Break one sentence's length — shorten or combine. |
-| Paragraph ending on punchy one-liner | "This is significant." "This matters." "This changes everything." | Delete or merge into the preceding sentence. |
-| Vague declarative | "This is important," "The implications are significant," "This is noteworthy" | Name the specific implication or delete. |
-| Distant narrator | "It should be noted that researchers have found..." | State directly: "Researchers found..." |
-| Meta-joiners as paragraph openers | "Furthermore," "Moreover," "Additionally" starting every paragraph | Vary openers: start with the subject, a question, or a concrete detail. |
-| Wh- word sentence openers | Excessive "Which," "Where," "When," "How" starters | Lead with subject or verb instead. |
-| Em dash present | Any em dash (—) or en dash (–) | Replace with comma, parentheses, colon, or period. |
+| Check | What to find | How to review |
+|-------|-------------|----------------|
+| Adverb clusters | Repeated or stacked intensifiers, including -ly words | Remove only empty or redundant modifiers; keep precise, discipline-standard adverbs. No numeric cap. |
+| Inanimate subjects | "The data tells us..." or "The study believes..." | Review literal personification or a hidden actor. "The data suggest" and "Results indicate" are standard academic phrasing. |
+| Repeated sentence rhythm | Several sentences with the same length or syntax | Vary only when the passage becomes monotonous; do not force variation. |
+| Dramatic one-line ending | "This matters." or "This changes everything." | Keep a concise sentence that adds a result or qualification; trim only empty emphasis. |
+| Arrow-linked outline | Fragments connected by arrows in narrative text | Convert to complete sentence(s) when prose is intended; preserve meaning and order. Keep intentional diagrams and workflows. |
+| Unnumbered bullets in narrative | Related subpoints listed inside running academic prose | Prefer a coherent paragraph when every claim remains clear; keep bullets for independent or scannable items. Preserve numbered findings and ordered steps. |
+| Vague declarative | "This is important" without a stated reason | Specify only what the source supports, or remove empty emphasis. |
+| Distant narrator | "It should be noted that researchers have found..." | Remove throat-clearing when it adds nothing; retain passive voice when appropriate. |
+| Repeated meta-joiners | Paragraphs repeatedly open with "Furthermore" or "Moreover" | Keep useful formal transitions; vary or restructure only if repetition obscures the logic. |
+| Repeated Wh-word openers | Several sentences begin with "Which," "Where," "When," or "How" | Review a repetitive cluster; keep grammatical, purposeful openings. |
+| Em/en dash | A dash appears in prose | Follow the writer's sample and target style. Preserve ranges, symbols, math, and file syntax. |
 
 ---
 
 ## AI Vocabulary Overuse
 
-LLMs favor specific "smart-sounding" words far more than human writers. Replace with plain equivalents.
+Some words become formulaic through repetition or vague use. Replace them only when they add no precise meaning; keep technical terms and accurate field-specific uses.
 
-**Always remove:** See `references/banned_phrases.md` → "AI Vocabulary" section for the full kill list with replacements.
-
-**Context-dependent:** See `references/banned_phrases.md` → "Context-Dependent" section for phrases that may be acceptable in some academic contexts.
+See `references/banned_phrases.md` for phrase-level review cues and context-dependent examples.
 
 ---
 
 ## Copula Avoidance
 
-AI replaces simple "is/are" with elaborate constructions.
+Review elaborate constructions that obscure a simple, equivalent statement. Do not simplify if it changes the claim.
 
 **Before:** "The method serves as a foundation for the analysis."
 **After:** "The method is the foundation for the analysis."
@@ -49,181 +49,186 @@ AI replaces simple "is/are" with elaborate constructions.
 
 ## Formulaic Structures
 
+### Arrow-Linked Outlines
+
+Arrow-connected fragments can read like notes or a diagram when the intended output is academic prose. Convert them to complete sentence(s), keeping each item and the relationship or order the source actually expresses. Do not turn association into causation or imply a process sequence when the arrows do not establish one. Keep arrows in diagrams, equations, code, and intentional workflows; if their meaning is unclear, preserve the notation and flag the ambiguity.
+
+### Numbered Findings and Unnumbered Bullets
+
+Keep numbering for enumerated findings, ordered steps, rankings, and items the text needs to reference. Do not change a numbered list into unordered bullets or prose just to vary the format. For related unnumbered bullets in running narrative, prefer a paragraph when the relationship is clear and no claim is lost. Retain bullets for independent points, procedures, criteria, scannability, or when the author or target style prefers them.
+
 ### "Not X, but Y" / "Not only X, but also Y"
-AI overuses contrast patterns. Just state the point.
 
-**Before:** "This is not merely a theoretical contribution, but a practical framework for implementation."
-**After:** "This is a practical framework for implementation."
+Review a contrast when it creates a false opposition or adds drama without information. Keep contrasts that distinguish methods, hypotheses, findings, or interpretations.
 
-### Rule of Three
-AI forces ideas into triplets. Break them or keep only what matters.
+**Empty contrast — revise if both halves repeat the same point:**
 
-**Before:** "The study was rigorous, comprehensive, and systematic."
-**After:** "The study was systematic." (or "The study was rigorous and systematic" if both are true)
+**Before:** "The measure is not only useful, but also valuable."
+**After:** "The measure is useful."
+
+**Meaningful contrast — keep:**
+
+"The intervention increased adherence, not overall attendance."
+
+### Forced Triads
+
+Review three-part lists only when the third item is padding or the parallel form is imposed for effect. Keep lists that represent actual categories, measures, or findings.
+
+**Before:** "The study was rigorous, comprehensive, and systematic." (if only systematic is supported)
+**After:** "The study was systematic."
 
 ### Dramatic Fragmentation
-Short punchy sentences stacked for false gravitas.
+
+Review stacked fragments when they add emphasis but no distinct information. Keep short sentences that report a result, limitation, or qualification.
 
 **Before:** "The model works. It is reliable. It is valid. It is ready."
-**After:** "The model is reliable and valid."
+**After:** "The model works, is reliable and valid, and is ready."
 
-### The "Gap + Contribution" Formula
+### Generic "Gap + Contribution" Formula
 
-The single most common AI academic writing structure. Nearly every AI-generated introduction follows this template:
+The gap-plus-contribution sequence can become formulaic when it asserts novelty without evidence. A specific, supported research gap is valid academic content; do not delete it solely because it uses the word "gap."
 
-**Before:** "Despite extensive research on social media, few studies have examined its impact on academic performance among university students. This paper addresses this gap by proposing a novel framework for understanding this relationship."
-
-**After:** State what you actually did and why it matters. "We measured the relationship between daily social media use and GPA among 342 university students, focusing on study habits as a mediator."
-
-**Signals:**
+**Signals to review:**
 - "Despite extensive research on X..."
 - "Few studies have examined..."
 - "This paper addresses this gap..."
 - "This study fills a critical gap in the literature..."
 - "To the best of our knowledge, this is the first study to..."
 
-**Rule:** If the "gap" is real, name the specific missing work. If it's not real, don't invent it. Never use the word "gap" — just state your contribution.
+**Rule:** State a gap only when supported by the supplied literature or citations. Do not invent novelty, citations, or a contribution; keep a real, specific gap when it helps explain the study.
 
 ---
 
 ## Signposting and Meta-Commentary
 
-Academic writing has some signposting, but AI overdoes it.
+Academic writing uses signposting. Remove it only when it is redundant or contributes no information.
 
-**Remove:**
-- "This paper is organized as follows." (Let the structure speak for itself.)
-- "Let us now turn to..." (Just turn to it.)
-- "Having established X, we now examine Y." (Just examine Y.)
-- "It is worth noting that..." (If it's worth noting, just note it.)
-- "This section explores..." (Just explore it.)
+**Review when redundant:**
+- "This paper is organized as follows."
+- "Let us now turn to..."
+- "Having established X, we now examine Y."
+- "It is worth noting that..."
+- "This section explores..."
 
-**Keep (section-specific):**
-- "As discussed in Section 3..." (Cross-references are useful.)
-- "Building on the framework established by..." (Contextualizes contribution.)
+**Often useful:**
+- "As discussed in Section 3..." (cross-reference)
+- "Building on the framework established by..." (context)
 
 ---
 
 ## Generic Conclusions
 
-AI ends sections and papers with vague uplift.
+Review conclusions that end with vague uplift or repeat an earlier claim.
 
-**Remove:**
+**Review when no specific content follows:**
 - "These findings have important implications for future research."
 - "This study contributes to the growing body of literature on..."
 - "The future of this field is promising."
 - "Exciting opportunities lie ahead."
 - "These results pave the way for..."
 
-**Replace with:** The specific implication, contribution, or opportunity. If you can't name it, delete the sentence.
+**Prefer:** A specific implication or direction supported by the source. Do not invent a recommendation or research agenda to make an ending sound concrete.
 
 ---
 
 ## Filler Phrases
 
-Wordy constructions that add nothing. See `references/banned_phrases.md` → "Filler Constructions" for the full list with replacements.
+Wordy constructions may be concise without losing meaning. See `references/banned_phrases.md` for review cues and possible alternatives.
 
 ---
 
 ## Elegant Variation (Synonym Cycling)
 
-AI swaps repeated nouns with synonyms to avoid repetition. This confuses readers.
+Unnecessary synonym changes can make a technical term ambiguous. Prefer consistent terminology when the referent is the same; vary wording only when the meaning remains precise.
 
 **Before:** "The participants completed the survey. The respondents then answered follow-up questions. The subjects were compensated."
 **After:** "The participants completed the survey. They then answered follow-up questions. All participants were compensated."
 
-Use the same term throughout. Consistency aids comprehension.
+---
+
+## Em and En Dashes
+
+Do not remove dashes mechanically. Preserve an author's established punctuation, numerical ranges, symbols, math, and syntax. If a dash conflicts with supplied journal guidance, revise prose punctuation without changing protected technical spans.
+
+Otherwise, use the writer's sample and target style. Never change a dash inside math, a range, or file syntax as a style edit.
 
 ---
 
-## Em Dashes
+## Throat-Clearing and Overstated Tone
 
-Hard ban in academic writing. Replace with:
-
-- Comma: "The method — which was validated — produced..." → "The method, which was validated, produced..."
-- Parentheses: "The results — shown in Table 1 — indicate..." → "The results (shown in Table 1) indicate..."
-- Colon: "One factor stood out — consistency." → "One factor stood out: consistency."
-- Period: Split into two sentences.
-
-**Exception:** If the user's own writing sample uses em dashes consistently, match their style.
-
----
-
-## Sycophantic / Servile Tone
-
-**Remove:**
+Review phrases such as:
 - "It is important to note that..."
 - "It goes without saying that..."
 - "Needless to say..."
 - "It is imperative that..."
 - "It is crucial to understand..."
 
-If it's important, state it. Don't announce its importance.
+Remove them when they merely announce importance or urgency. Keep them only when they carry a specific, supported meaning or match the required register.
 
 ---
 
 ## Persuasive Authority Tropes
 
-**Remove:**
-- "The real question is..." (Just ask the question.)
-- "At its core..." (Just state the core point.)
-- "What really matters is..." (Just state what matters.)
-- "The fundamental issue..." (Just name the issue.)
-- "Ultimately..." (Usually filler in academic writing.)
+Review these when they create emphasis without an argument:
+- "The real question is..."
+- "At its core..."
+- "What really matters is..."
+- "The fundamental issue..."
+- "Ultimately..."
 
 ---
 
 ## Manufactured Punchlines
 
-Stacked short sentences for false emphasis.
+Review stacked short sentences when they add emphasis but no separate finding. Keep a short sentence that carries a result or qualification.
 
 **Before:** "The model works. It is validated. It is ready. It is here."
-**After:** "The validated model is ready for deployment."
+**After:** "The model works, is validated, and is ready."
 
 ---
 
-## False Ranges
+## Ranges
+
+Do not call a range false unless the source supports that conclusion.
 
 **Before:** "From students to professionals, the method applies."
-**After:** "The method applies to both students and professionals."
+**After:** "The method applies to both students and professionals." (if both groups are in scope)
 
 **Before:** "Across a wide range of disciplines..."
-**After:** Name the disciplines, or say "across disciplines" without the filler adjective.
+**After:** Name the disciplines, or say "across disciplines" only when the source supports that scope.
 
 ---
 
 ## AI Citation Patterns
 
-AI generates distinctive citation patterns that signal machine writing.
+Citation form alone does not establish whether a source is genuine or whether a claim is supported. Preserve citation content during rewriting and treat concerns as findings to verify, not facts.
 
 ### Generic Citations Without Synthesis
-**Before:** "Smith (2020) found that social media affects students. Jones (2021) found similar results. Lee (2022) also found a relationship."
-**After:** "Multiple studies converge on a negative relationship between social media use and academic performance (Smith, 2020; Jones, 2021; Lee, 2022), though the mechanisms differ."
 
-**Rule:** Citations should synthesize, not list. If three studies found the same thing, say so in one sentence.
+**Before:** "Smith (2020) found a negative association between social media use and GPA. Jones (2021) reported a similar negative association. Lee (2022) also found a negative relationship."
+**After:** "Three studies reported a negative association between social media use and academic performance (Smith, 2020; Jones, 2021; Lee, 2022)."
+
+Synthesize only when the supplied source text establishes a shared finding. Preserve distinctions and citations when results differ or are not described.
 
 ### Citation Chains Without Analysis
-**Before:** "Smith (2020) studied social media. Jones (2021) examined Instagram. Lee (2022) looked at TikTok. Chen (2023) analyzed Twitter."
-**After:** "Research has examined platform-specific effects, with studies on Instagram (Jones, 2021), TikTok (Lee, 2022), and Twitter (Chen, 2023) each finding distinct usage patterns."
 
-**Rule:** Group citations by finding, not by author. Don't narrate a bibliography.
+**Before:** "Smith (2020) studied social media generally. Jones (2021) examined Instagram. Lee (2022) looked at TikTok. Chen (2023) analyzed Twitter."
+**After:** "Studies examined social media generally (Smith, 2020) and specific platforms: Instagram (Jones, 2021), TikTok (Lee, 2022), and Twitter (Chen, 2023)."
 
-### Fabricated Citations
-AI often generates real author names with fake years, titles, or journals. Signs:
-- Citation appears only once and is never discussed again
-- The finding attributed to the citation is suspiciously convenient
-- The year is suspiciously recent (2023-2024)
-- No DOI or URL provided
+Group studies only when the source establishes a shared finding. Do not infer a result from a citation title, author, or year.
 
-**Rule:** If you cannot verify a citation exists, flag it for the user. Never fabricate citations during rewrite.
+### Unverified Citations
 
-### Over-Citation
-**Before:** "Social media is widely used (Smith, 2020). Students spend time on platforms (Jones, 2021). This affects grades (Lee, 2022)."
-**After:** "Social media use among students is associated with lower grades (Lee, 2022)."
+A citation that appears unfamiliar, recent, or only once is not by itself evidence of fabrication.
 
-**Rule:** Common knowledge doesn't need citation. Cite claims that are specific, surprising, or contested.
+Never invent or silently remove a citation. If it cannot be checked against an available source, call it unverified rather than claiming it is false or verified.
 
-### Under-Citation
-**Before:** "Social media clearly harms academic performance."
-**After:** "Social media use is negatively associated with academic performance (r = -0.34, p < 0.01; Lee, 2022)."
+### Citation Density
 
-**Rule:** Specific claims need specific evidence. If you state a finding, cite it.
+Do not remove citations because a sentence seems over-cited or add citations because a claim seems under-supported. Check the source-to-claim mapping and target style; if evidence is unavailable, flag the issue for the author instead of changing citations or adding statistics.
+
+---
+
+## Final Rule
+
+Do not claim "100% slop" from a phrase match, and do not report that citations are verified unless their sources were checked. Preserve meaning first; revise style only where context supports it.

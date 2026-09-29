@@ -1,32 +1,45 @@
 # Academic Voice — What to Keep
 
-These patterns are standard in academic writing. Do NOT remove them during humanization.
+These patterns are common in academic writing. Do not remove them merely because they match a general humanization heuristic; follow the section, discipline, author sample, and supplied style guidance.
 
 ---
 
 ## Passive Voice
 
-Academic writing uses passive voice deliberately, especially in:
+Passive voice is the Methods default and is required by this skill's matrix unless supplied target guidance says otherwise. It is also acceptable in Results:
 
-**Methods (required):**
+**Methods:**
 - "The samples were collected from three sites."
 - "Data were analyzed using SPSS version 28."
 - "Participants were recruited through purposive sampling."
 - "The questionnaire was distributed to 200 respondents."
 
-**Results (acceptable):**
+**Results:**
 - "A significant difference was found between groups (p < 0.05)."
 - "The hypothesis was supported by the data."
 
-**Why:** Methods and Results emphasize the process and findings, not the researcher. The actor is implied (the research team).
+Passive voice is also acceptable in Introduction and Literature Review. In Abstract, Discussion, and Conclusion, prefer active constructions when they are clearer and consistent with the target style; do not convert voice mechanically.
 
-**When to flag:** Passive voice in Discussion or Conclusion where active voice would be clearer and more direct.
+**When to flag:** When passive voice hides an actor the reader needs to know, makes a claim less clear, or conflicts with supplied section or style guidance. In Discussion or Conclusion, review whether active voice would improve clarity rather than treating passive voice as an error.
+
+---
+
+## Inanimate Subjects and False Agency
+
+Academic subjects such as "the data," "the results," "the study," and "the paper" are conventional shorthand. Do not flag them solely because they are inanimate.
+
+**Keep:**
+- "The data suggest an association between the variables."
+- "Results indicate a difference between groups."
+- "The study examines the effect of the intervention."
+
+**Review:** Wording that assigns human understanding or intention to data, or hides a consequential actor: "The data tells us..." or "The study believes..." Name the researcher or decision-maker only when the source identifies one.
 
 ---
 
 ## Hedging
 
-Academic writing hedges appropriately to avoid overclaiming.
+Academic writing uses hedging to avoid overclaiming.
 
 **Expected in Discussion:**
 - "The results suggest that..."
@@ -39,15 +52,15 @@ Academic writing hedges appropriately to avoid overclaiming.
 - "The evidence appears to support..."
 - "It has been proposed that..."
 
-**When to flag:** Excessive hedging that weakens clear findings. "The results seem to possibly suggest that there might be a potential relationship" — compress to one honest hedge.
+**When to flag:** Stacked hedges that make the degree of uncertainty unclear. Keep the hedge that best reflects the evidence; do not remove appropriate caution from Discussion or Literature Review.
 
 ---
 
 ## Formal Transitions
 
-Standard academic connectors. Do not replace with casual alternatives.
+Formal connectors are standard in academic writing; do not replace them with casual alternatives solely to vary wording.
 
-**Keep:**
+**Examples:**
 - Furthermore, Moreover, In addition
 - However, Nevertheless, Nonetheless
 - In contrast, Conversely, On the other hand
@@ -56,7 +69,7 @@ Standard academic connectors. Do not replace with casual alternatives.
 - Specifically, In particular
 - Subsequently, Thereafter
 
-**Flag when overused:** Three "furthermore" in one paragraph. Vary or restructure.
+**When to flag:** Repeated transitions can make the argument formulaic. Keep a transition when it clarifies the logical relationship; there is no fixed per-paragraph limit.
 
 ---
 
@@ -70,7 +83,7 @@ Technical terms in the field are not AI-isms.
 - Regression, correlation, variance
 - Ontology, epistemology, paradigm
 
-**Flag when:** Terms are used vaguely or as decoration rather than precise application.
+**When to flag:** Terms used vaguely or as decoration rather than precisely.
 
 ---
 
@@ -83,93 +96,98 @@ Academic writing uses nominalizations where they are standard.
 - "The collection of data was conducted..."
 - "An analysis of variance was performed..."
 
-**Flag in Discussion/Conclusion:** Where active constructions are clearer. "We implemented the intervention" > "The implementation of the intervention was carried out."
+Review a nominalization when it obscures the actor or makes prose unnecessarily indirect. Prefer a clearer active construction only when the meaning and section conventions are preserved.
 
 ---
 
 ## Citation Patterns
 
-Standard academic citation conventions.
+Follow the target discipline's citation conventions.
 
-**Keep:**
+**Common forms:**
 - "As noted by Smith (2020)..."
 - "Previous research has shown (Jones, 2019; Lee, 2021)..."
 - "According to the framework proposed by Chen (2018)..."
 
-**Flag when:** Citations are used as filler without adding substance.
+Do not treat citation density as a problem by itself. Do not claim a citation is verified unless its source was available and checked; do not add or remove citations during a rewrite without evidence and user direction.
 
 ---
 
 ## Appropriate Academic Register
 
-Formal tone is expected. Do not "casualize" academic text.
+Keep the register appropriate to the field and target venue.
 
-**Keep:**
-- "This study examines..." (not "This study looks at...")
-- "The findings reveal..." (not "The findings show that...")
-- "It is imperative to note..." (only if substantive, not filler)
-- "The aforementioned variables..." (if used consistently)
+**Often appropriate:**
+- "This study examines..." (rather than casualizing it to "looks at")
+- "The findings reveal..." or "The findings show..." when accurate
+- "The aforementioned variables..." when clear and consistent
+- "It is imperative to note..." only when it contributes substantive meaning
 
-**Flag when:** Overly ornate language obscures meaning. "The utilization of" → "The use of" is fine. "The utilization of" → "using" may be too casual for some fields.
+Review ornate wording when it obscures meaning. "The utilization of" may become "the use of"; a more direct verb may or may not fit a particular discipline.
 
 ---
 
 ## Section-Specific Guidance
 
 ### Abstract
-- Dense, information-packed. Every sentence carries weight.
-- Avoid "This paper explores" — just state the finding.
-- "We present a novel framework for X" is acceptable.
+- Dense and information-packed; retain methods and findings that are actually provided.
+- Avoid generic framing when a specific aim or result is available.
+- "We present a framework for X" is acceptable when accurate.
 
 ### Introduction
-- Move from broad context to specific gap.
-- Formal transitions between paragraphs are standard.
-- "Despite extensive research on X, few studies have examined Y" — keep this structure.
+- Move from broad context to the study's question or contribution.
+- Formal transitions are standard.
+- Keep a research gap only when supported by the available literature.
 
 ### Literature Review
-- Synthesis over summary. "Several studies (A, 2020; B, 2021) converge on..."
-- Hedging is expected when characterizing others' work.
+- Synthesize prior work when the cited findings support a shared interpretation.
+- Preserve meaningful differences between studies.
+- Hedging is appropriate when characterizing others' work.
 
 ### Methods
-- Passive voice is the default.
-- Reproducibility detail is not filler — keep it.
-- "All procedures were approved by the IRB" — required, not optional.
+- Passive voice is common; first person is also acceptable where the target style permits it.
+- Reproducibility detail is not filler.
+- Preserve required procedural statements, such as ethics approval, when present.
 
 ### Results
-- Report, don't interpret. Save interpretation for Discussion.
+- Report findings; reserve interpretation for Discussion when appropriate.
 - "Table 1 shows" is standard.
-- Statistical reporting follows discipline conventions (APA, IEEE, etc.).
+- Follow discipline conventions for statistical reporting.
 
 ### Discussion
-- This is where the researcher's voice matters most.
-- "We argue that" and "Our findings suggest" are appropriate.
-- Limitations section should be honest, not performative.
+- Use the researcher's voice where appropriate; "We argue that" and "Our findings suggest" are valid.
+- Preserve hedging that matches the evidence.
+- State limitations specifically when details are available; do not invent them.
 
 ### Conclusion
-- Synthesize, don't repeat.
-- "This study contributes to the literature by..." — acceptable if specific.
-- Future directions should be concrete, not generic.
+- Synthesize without repeating the full discussion.
+- A contribution statement is acceptable when specific and supported.
+- Keep future directions tied to the study; do not add generic recommendations.
 
 ---
 
 ## False Positives — What NOT to Flag
 
-These patterns are normal in academic writing. Do NOT remove them during humanization.
+These patterns are not problems by themselves:
 
-| Pattern | Why it's fine |
-|---------|--------------|
-| Bullet points and numbered lists | Standard for presenting findings, procedures, or criteria |
-| Short paragraphs | Abstracts and results sections are naturally dense and short |
-| Formal tone | Academic writing is supposed to be formal — that's not an AI tell |
-| Technical jargon | Discipline-specific terms are required, not AI-isms |
-| Long sentences (30+ words) | Academic prose often needs complex sentences for precision |
-| Passive voice in Methods | Required by convention — "The samples were collected" is correct |
-| Hedging in Discussion | Expected academic caution — "The results suggest" is appropriate |
+| Pattern | Why it may be appropriate |
+|---------|----------------------------|
+| Numbered findings and ordered steps | Preserve numbering; it carries structure and can support references |
+| Unnumbered bullets in running narrative | Can become prose when points are related; keep bullets for independent criteria, procedures, or requested styles |
+| Short paragraphs | Abstracts and results sections can be naturally dense and brief |
+| Formal tone and technical terminology | Required by academic register and discipline |
+| Long sentences | Complex sentences may be necessary for precision |
+| Passive voice in Methods | Common convention: "The samples were collected" |
+| Hedging in Discussion | Appropriate caution: "The results suggest" |
+| "The data suggest" / "Results indicate" | Conventional academic phrasing, not false agency by itself |
 | "Table 1 shows" / "Figure 2 illustrates" | Standard reference format |
-| Citation-heavy sentences | Literature reviews require dense citations |
-| Nominalizations in Methods | "The implementation of" is standard in procedural writing |
-| "Significantly" in statistical context | Has specific statistical meaning (p < 0.05), not an AI tell |
-| One "however" or "furthermore" per paragraph | Normal transition use — flag only when clustered |
-| Consistent terminology (no synonym cycling) | Academic writing favors consistency over variety |
+| Citation-heavy sentences | Literature reviews may require dense citations |
+| Nominalizations in Methods | Often standard in procedural writing |
+| "Significantly" in statistical context | Can report statistical significance precisely |
+| A formal transition | Normal when it expresses a logical connection |
+| Meaningful contrasts and accurate lists | Preserve distinctions and categories grounded in the source |
+| Brief factual sentences and specific closers | Keep when they add a result or qualification |
+| Em/en dashes | Preserve author style, meaningful ranges, and technical syntax |
+| Consistent terminology | Academic writing favors precision over synonym cycling |
 
-**Rule:** Look for clusters of tells, not isolated instances. One "however" is fine. Three in a paragraph is a pattern. One passive sentence in Methods is correct. Every sentence passive in Discussion is a problem.
+**Rule:** Judge function and context, not a phrase match. Clusters are reasons to review, not automatic proof of a problem. Preserve content that is accurate and relevant.
