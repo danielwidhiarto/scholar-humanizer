@@ -18,3 +18,5 @@ jobs:
           python-version: "3.12"
       - name: Validate synchronized package metadata
         run: python3 scripts/validate-package.py
+      - name: Run installer and checker regression tests
+        run: python3 -m unittest discover -s tests -v

@@ -15,7 +15,10 @@ A portable, harness-neutral agent skill for improving academic prose. The runtim
 - `references/banned_phrases.md` — phrase-level review cues, not universal bans.
 - `examples/before_after.md` — rewrites and regression cases, including LaTeX syntax protection.
 - `examples/scoring_examples.md` — rubric demonstrations.
+- `scripts/install.py` — optional, dependency-free installer for the configured agent skill directories.
+- `scripts/academic-slop-checker.py` and `scripts/academic_slop_checker.py` — optional diagnostic checker and implementation module; findings are cues, never authorship verdicts.
 - `scripts/validate-package.py` — dependency-free package-structure and portability checks.
+- `tests/` — standard-library regression tests for the installer and checker.
 
 ## The maintenance contract
 
@@ -27,7 +30,9 @@ A portable, harness-neutral agent skill for improving academic prose. The runtim
 - **Examples:** Keep before/after pairs faithful to their source and include false positives when changing a pattern rule.
 - **Version:** `SKILL.md` frontmatter stores the version under `metadata.version`. Bump for behavior changes and update `CHANGELOG.md`.
 - **Compatibility:** Keep usage language harness-neutral. The README's `npx skills add danielwidhiarto/scholar-humanizer` package path was recognized by the Skills CLI in a non-installing `--list` check; retain manual installation as fallback and do not claim untested agent-specific support.
-- **Validation:** Run `python3 scripts/validate-package.py` before publishing. It checks frontmatter, required package files, and the 200-line `SKILL.md` limit; it does not check document synchronization.
+- **Installer:** Keep the supported agent IDs and configured project/global directories in `scripts/install.py` and the README table synchronized. Detection is a convenience, not proof that an agent runtime loads a given path. Do not overwrite existing package folders without `--force`, remove unrelated files, or write outside the chosen scope.
+- **Checker:** Keep `scripts/academic-slop-checker.py` diagnostic-only. It must preserve source files, report line numbers, mask protected LaTeX/Markdown spans, and never call a citation fabricated or text AI-written from a pattern match.
+- **Validation:** Run `python -m unittest discover -s tests -v` and `python scripts/validate-package.py` before publishing. The validator checks frontmatter, required package files and tests, and the 200-line `SKILL.md` limit.
 
 ## Editing SKILL.md
 

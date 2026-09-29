@@ -69,6 +69,7 @@ Load `rules/academic_voice.md`, `rules/ai_slop.md`, and `references/banned_phras
 - When arrow-separated outline fragments are used as prose, convert them to complete sentence(s), preserving listed order and relationships without inventing causality. Retain arrows in diagrams, formulas, code, and intentional workflows.
 - Revise a pattern only when it is empty, repetitive, misleading, or inconsistent with the section or supplied voice.
 - Never apply universal active-voice, adverb, hedging, transition, or dash bans.
+- If the optional `scripts/academic-slop-checker.py` is available, use it only to locate candidates; review each finding in context. It does not edit files or determine authorship.
 
 ### 5. Protect Integrity and Format
 
@@ -137,3 +138,4 @@ These guide editing; follow more specific user or journal instructions when supp
 - `references/banned_phrases.md` — phrase-level review cues
 - `examples/before_after.md` — concrete rewrites and regression examples
 - `examples/scoring_examples.md` — rubric demonstrations
+- `scripts/academic-slop-checker.py` — optional diagnostic scan; findings are not verdicts

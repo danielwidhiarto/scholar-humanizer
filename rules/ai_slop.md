@@ -22,6 +22,10 @@ Use these as a first-pass review, then check the surrounding argument and source
 | Repeated Wh-word openers | Several sentences begin with "Which," "Where," "When," or "How" | Review a repetitive cluster; keep grammatical, purposeful openings. |
 | Em/en dash | A dash appears in prose | Follow the writer's sample and target style. Preserve ranges, symbols, math, and file syntax. |
 
+## Optional Diagnostic Checker
+
+When available, `scripts/academic-slop-checker.py <file>` can locate configured review cues and report source line numbers and detected sections. It masks common LaTeX and Markdown syntax, does not edit files, and does not produce an authorship verdict or PASS/FAIL result. Inspect every match in context.
+
 ---
 
 ## AI Vocabulary Overuse

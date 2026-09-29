@@ -50,6 +50,21 @@ for example_file in ("before_after.md", "scoring_examples.md"):
     if not (examples_dir / example_file).exists():
         raise SystemExit(f"Missing example file: examples/{example_file}")
 
+# Check optional tooling and its regression tests exist
+scripts_dir = ROOT / "scripts"
+for script_file in (
+    "install.py",
+    "academic-slop-checker.py",
+    "academic_slop_checker.py",
+):
+    if not (scripts_dir / script_file).is_file():
+        raise SystemExit(f"Missing script: scripts/{script_file}")
+
+tests_dir = ROOT / "tests"
+for test_file in ("test_install.py", "test_academic_slop_checker.py"):
+    if not (tests_dir / test_file).is_file():
+        raise SystemExit(f"Missing regression test: tests/{test_file}")
+
 # Check SKILL.md line count (portability budget)
 if len(SKILL.splitlines()) > 200:
     raise SystemExit(f"SKILL.md exceeds 200-line portability budget ({len(SKILL.splitlines())} lines)")

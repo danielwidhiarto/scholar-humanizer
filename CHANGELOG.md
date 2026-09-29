@@ -15,10 +15,16 @@
 - Made README and installation language harness-neutral; documented the Skills CLI after it recognized the repository's skill.
 - Updated source attribution: the reviewed humanizer version lists 26 pattern categories, stop-slop has 8 Core Rules, and Scholar Humanizer's modes and review gates are local adaptations.
 
-### Deferred
+### Added
 
-- Multi-agent installers, `scripts/install.py`, and agent-specific configuration remain out of scope.
-- A dedicated pattern linter and Overleaf line-navigation/report integration remain deferred.
+- Added `scripts/install.py`, a zero-dependency installer for the 12 configured agent skill directories. It supports project/global scope, detection hints, explicit selection, dry runs, guarded overwrite, and managed project pointers where configured.
+- Added `scripts/academic-slop-checker.py` with section-aware, line-numbered diagnostic findings and optional Markdown output. It masks common LaTeX math, commands, citations, comments, and code spans; it never edits input or reports PASS/FAIL.
+- Added standard-library regression tests for installer safety and checker behavior, and wired them into package validation and CI.
+
+### Scope notes
+
+- Installer paths are configured compatibility targets. Directory-copy behavior is tested; automatic skill discovery by every agent runtime is not claimed as integration-tested.
+- The checker reports candidate patterns only. It does not verify citations, infer AI authorship, or provide Overleaf-specific navigation.
 
 ## 1.1.0 — 2026-07-22
 

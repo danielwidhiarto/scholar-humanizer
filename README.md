@@ -20,7 +20,54 @@ To list the skill without installing it:
 npx skills add danielwidhiarto/scholar-humanizer --list
 ```
 
-The repository was recognized by the CLI as containing the `scholar-humanizer` skill. Manual fallback: clone the repository or copy `SKILL.md`, `rules/`, `references/`, and `examples/` into a project or agent skill location.
+The repository was recognized by the CLI as containing the `scholar-humanizer` skill. Manual fallback: clone the repository or copy `SKILL.md`, `rules/`, `references/`, and `examples/` into a project or agent skill location. Also copy both checker files from `scripts/` if you want the optional prose checker in that installation.
+
+### Zero-dependency installer
+
+For a guided install into one or more agent skill folders, clone this repository. The installer uses only the Python standard library and requires Python 3.10 or newer:
+
+```sh
+python scripts/install.py --list
+python scripts/install.py --scope project
+```
+
+The installer detects agent-specific project markers and available CLI commands, then asks which detected agents to target and confirms the planned writes. Shared folders such as `.agents/skills/` are not enough to identify a specific agent, so select one explicitly when needed:
+
+```sh
+python scripts/install.py --agent claude-code,codex --scope project --dry-run
+python scripts/install.py --agent claude-code,codex --scope project
+python scripts/install.py --agent claude-code --scope global
+```
+
+Project installs add or update a managed pointer in the relevant instruction file where configured; use `--no-pointer` to skip that. Existing skill folders are skipped unless `--force` is provided; `--force` overwrites only package files and leaves unrelated files in place. Global installs write to the selected user's home directory and do not edit global instruction files. Use `--dry-run` to inspect destinations before writing.
+
+The installer supports these configured destinations. It creates/copies the skill folders; check an agent's current documentation if its skill-discovery paths change.
+
+| Agent | Project folder | User folder |
+|-------|----------------|-------------|
+| Claude Code | `.claude/skills/` | `~/.claude/skills/` |
+| Codex | `.codex/skills/` | `~/.agents/skills/` |
+| Antigravity | `.agents/skills/` | `~/.gemini/config/skills/` |
+| Cursor | `.cursor/skills/` | `~/.cursor/skills/` |
+| Cline | `.cline/skills/` | `~/.cline/skills/` |
+| OpenCode | `.opencode/skills/` | `~/.config/opencode/skills/` |
+| Amp | `.agents/skills/` | `~/.config/agents/skills/` |
+| Gemini CLI | `.gemini/skills/` | `~/.gemini/skills/` |
+| Hermes | `.hermes/skills/` | `~/.hermes/skills/` |
+| GitHub Copilot | `.agents/skills/` | `~/.agents/skills/` |
+| Kimi Code | `.agents/skills/` | `~/.agents/skills/` |
+| Pi | `.pi/skills/` | `~/.pi/agent/skills/` |
+
+### Optional prose checker
+
+The dependency-free checker reports candidate patterns with source line numbers and a detected section. It does not edit files, verify citations, or decide whether prose is AI-written; inspect every finding in context.
+
+```sh
+python scripts/academic-slop-checker.py paper.tex
+python scripts/academic-slop-checker.py paper.tex --markdown
+```
+
+It accepts UTF-8 `.tex`, `.md`, and `.txt` files. For LaTeX, it masks comments, common math environments, inline/display math, citation keys, labels/references, and common code spans before checking prose. The report is diagnostic, not a PASS/FAIL gate.
 
 ## What It Does
 
@@ -81,6 +128,9 @@ references/
 examples/
   before_after.md             # Rewrites and regression examples
   scoring_examples.md         # Rubric demonstrations
+scripts/
+  install.py                  # Optional multi-agent skill installer
+  academic-slop-checker.py    # Optional no-edit pattern checker
 ```
 
 ## Background & Credits
