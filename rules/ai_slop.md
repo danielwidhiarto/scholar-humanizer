@@ -20,6 +20,7 @@ Use these as a first-pass review, then check the surrounding argument and source
 | Distant narrator | "It should be noted that researchers have found..." | Remove throat-clearing when it adds nothing; retain passive voice when appropriate. |
 | Repeated meta-joiners | Paragraphs repeatedly open with "Furthermore" or "Moreover" | Keep useful formal transitions; vary or restructure only if repetition obscures the logic. |
 | Repeated Wh-word openers | Several sentences begin with "Which," "Where," "When," or "How" | Review a repetitive cluster; keep grammatical, purposeful openings. |
+| Narrative citation template | Three or more close "Author (Year) verb + claim" sentences, or a repeated reporting verb | See `rules/narrative_citation.md`; single sentences and foundational works are not cues. |
 | Em/en dash | A dash appears in prose | Follow the writer's sample and target style. Preserve ranges, symbols, math, and file syntax. |
 
 ## Optional Diagnostic Checker
@@ -206,6 +207,8 @@ Do not call a range false unless the source supports that conclusion.
 ## AI Citation Patterns
 
 Citation form alone does not establish whether a source is genuine or whether a claim is supported. Preserve citation content during rewriting and treat concerns as findings to verify, not facts.
+
+For the "Author (Year) found that..." sentence template — including when a cluster of such sentences merits review — see `rules/narrative_citation.md`.
 
 ### Generic Citations Without Synthesis
 

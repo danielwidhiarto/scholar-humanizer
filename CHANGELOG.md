@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.3.0 — 2026-09-29
+
+### Added
+
+- Added `rules/narrative_citation.md`: cluster conditions for reviewing "Author (Year) + reporting verb + claim" sentences. Flag only clusters of three or more close template sentences or repeated reporting verbs; foundational works (introduced/proposed + named artifact) are kept. Motivated by ML/CS related-work sections.
+- Added regression tests and before/after examples for the narrative citation template and for "feature" noun/verb disambiguation.
+
+### Changed
+
+- Tightened the checker's copula cue: "features" now matches only its verb sense ("features a novel module"); the ML noun "feature" (feature maps, feature extraction, spatial features, "features are extracted") is no longer flagged. Documented remaining ML/CS noise in the README checker section.
+- Registered the new rule file in SKILL.md, `rules/ai_slop.md` (Quick Checks row + citation cross-reference), README, AGENTS.md, the installer payload (via the `rules/` directory), and package validation.
+
 ## 1.2.0 — 2026-09-29
 
 ### Changed

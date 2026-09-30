@@ -245,3 +245,19 @@ The estimate is also reported in \cite{smith2020,smith2020}; the increase was 10
 ```
 
 The prose opener is removed. Compare protected spans against the source; if syntax is uncertain, leave it unchanged and report the uncertainty.
+
+### "Feature" in ML/CS Prose Is Not a Copula Cue
+
+The copula cue targets the verb "features" ("the module features a novel block"), not the noun "feature." Keep technical uses:
+
+- **Keep:** Feature extraction produced 128-dimensional spatial features.
+- **Keep:** Features are extracted from the input volume.
+- **Review (verb sense):** The architecture features a novel attention block. → The architecture includes a novel attention block. (only if a simpler verb preserves the meaning)
+
+### Narrative Citation Template — Cluster, Not Verdict
+
+"Smith (2020) found that X" is standard attribution. Review only clusters (three or more close template sentences) or repeated reporting verbs, and keep foundational works:
+
+- **Keep (foundational):** "Vaswani et al. (2017) introduced the Transformer architecture, which this model extends." Do not synthesize or paraphrase away who introduced a method the paper builds on.
+- **Review (cluster, shared finding):** Three consecutive "Author (Year) found a negative association" sentences with varied verbs → synthesize when the supplied material establishes the shared finding: "Three studies reported a negative association (A, 2020; B, 2021; C, 2022)."
+- **Keep (distinct contributions):** Consecutive sentences that each describe a different method or result, with varied verbs, stay as written; do not merge findings that differ.

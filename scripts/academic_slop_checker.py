@@ -156,7 +156,11 @@ CUES = (
     ),
     cue(
         "Possible copula avoidance",
-        r"\b(?:serves?\s+as|stands?\s+as|boasts?|features?\s+(?:a|an|the|several|many|its|built-in))\b",
+        # "features" only in its verb sense ("features a novel module");
+        # the ML noun "feature(s)" (feature maps, spatial features, "features
+        # are extracted") is never followed directly by a determiner.
+        r"\b(?:serves? as\b|stands? as\b|boasts?\b|"
+        r"features\s+(?:a|an|the|its|their|our|both|each)\b)",
         "A simpler verb may be clearer when it preserves the intended meaning.",
     ),
     cue(

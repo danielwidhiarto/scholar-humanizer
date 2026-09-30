@@ -159,6 +159,26 @@ class AcademicSlopCheckerTests(unittest.TestCase):
         self.assertEqual(dash_findings[0].line, 2)
         self.assertEqual(dash_findings[0].section, "Discussion")
 
+    def test_feature_noun_is_not_flagged_as_copula(self) -> None:
+        source = (
+            "Feature extraction produced 128-dimensional spatial features. "
+            "Features are extracted from the input volume. "
+            "The feature map preserves local structure.\n"
+        )
+        findings = checker.analyze_text(source, ".txt")
+        self.assertEqual([item.cue for item in findings], [])
+
+    def test_feature_verb_sense_is_still_flagged(self) -> None:
+        source = (
+            "The module features a novel attention block. "
+            "Each layer boasts a residual connection.\n"
+        )
+        findings = checker.analyze_text(source, ".txt")
+        self.assertEqual(
+            {item.cue for item in findings},
+            {"Possible copula avoidance"},
+        )
+
     def test_markdown_report_escapes_table_delimiters(self) -> None:
         findings = [
             checker.Finding(

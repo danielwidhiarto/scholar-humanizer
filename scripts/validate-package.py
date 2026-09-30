@@ -34,7 +34,7 @@ skill_version = require(
 
 # Check rule files exist
 rules_dir = ROOT / "rules"
-for rule_file in ("academic_voice.md", "ai_slop.md"):
+for rule_file in ("academic_voice.md", "ai_slop.md", "narrative_citation.md"):
     if not (rules_dir / rule_file).exists():
         raise SystemExit(f"Missing rule file: rules/{rule_file}")
 

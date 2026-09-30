@@ -69,6 +69,8 @@ python scripts/academic-slop-checker.py paper.tex --markdown
 
 It accepts UTF-8 `.tex`, `.md`, and `.txt` files. For LaTeX, it masks comments, common math environments, inline/display math, citation keys, labels/references, and common code spans before checking prose. The report is diagnostic, not a PASS/FAIL gate.
 
+Note for ML/CS prose: the checker's copula cue matches "features" only in its verb sense (as in "the module features a novel attention block"). The noun "feature" — as in feature maps, feature extraction, or spatial features — is not flagged. Other word-level cues can still be noisy in ML/CS writing (for example, "robust" for robustness testing, "leverage" for matrix operations); review every finding in context and keep precise technical uses.
+
 ## What It Does
 
 1. **Identifies section type** (Abstract, Methods, Discussion, etc.)
@@ -123,6 +125,7 @@ SKILL.md                      # Entry point and source of truth
 rules/
   academic_voice.md           # Scholarly conventions to preserve
   ai_slop.md                  # Contextual pattern-review guidance
+  narrative_citation.md       # Cluster conditions for "Author (Year) found..." templates
 references/
   banned_phrases.md           # Phrase-level review cues
 examples/

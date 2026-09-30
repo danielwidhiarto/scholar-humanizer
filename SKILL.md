@@ -3,7 +3,7 @@ name: scholar-humanizer
 description: Improve academic prose while preserving scholarly conventions such as passive voice and hedging.
 license: MIT
 metadata:
-  version: "1.2.0"
+  version: "1.3.0"
 ---
 
 # Scholar Humanizer
@@ -63,7 +63,7 @@ Identify which academic section the text belongs to. If multiple sections, proce
 
 ### 4. Review Patterns
 
-Load `rules/academic_voice.md`, `rules/ai_slop.md`, and `references/banned_phrases.md`. Prioritize repeated or high-signal patterns, but judge each in context; one phrase, contrast, short sentence, adverb, hedge, transition, or dash is not a verdict.
+Load `rules/academic_voice.md`, `rules/ai_slop.md`, `rules/narrative_citation.md`, and `references/banned_phrases.md`. Prioritize repeated or high-signal patterns, but judge each in context; one phrase, contrast, short sentence, adverb, hedge, transition, or dash is not a verdict.
 
 - Keep contrasts that distinguish methods, hypotheses, results, or interpretations. Preserve numbered findings and ordered steps. In running academic prose, prefer paragraphs to related unnumbered bullets only when all claims remain clear; keep bullets for independent items, useful scanning, or required styles.
 - When arrow-separated outline fragments are used as prose, convert them to complete sentence(s), preserving listed order and relationships without inventing causality. Retain arrows in diagrams, formulas, code, and intentional workflows.
@@ -135,6 +135,7 @@ These guide editing; follow more specific user or journal instructions when supp
 
 - `rules/academic_voice.md` — what to keep per section
 - `rules/ai_slop.md` — patterns to review in context
+- `rules/narrative_citation.md` — when clustered "Author (Year) found..." templates merit review
 - `references/banned_phrases.md` — phrase-level review cues
 - `examples/before_after.md` — concrete rewrites and regression examples
 - `examples/scoring_examples.md` — rubric demonstrations

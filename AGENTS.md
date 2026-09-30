@@ -12,6 +12,7 @@ A portable, harness-neutral agent skill for improving academic prose. The runtim
 - `README.md` — installation, usage, section rules, scoring guidance, and source attribution.
 - `rules/academic_voice.md` — academic conventions to preserve by section.
 - `rules/ai_slop.md` — contextual pattern-review guidance.
+- `rules/narrative_citation.md` — cluster conditions for reviewing "Author (Year) found..." templates.
 - `references/banned_phrases.md` — phrase-level review cues, not universal bans.
 - `examples/before_after.md` — rewrites and regression cases, including LaTeX syntax protection.
 - `examples/scoring_examples.md` — rubric demonstrations.
