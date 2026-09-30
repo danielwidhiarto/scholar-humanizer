@@ -156,7 +156,7 @@ CUES = (
     ),
     cue(
         "Possible copula avoidance",
-        r"\b(?:serves? as|stands? as|boasts?|features?)\b",
+        r"\b(?:serves?\s+as|stands?\s+as|boasts?|features?\s+(?:a|an|the|several|many|its|built-in))\b",
         "A simpler verb may be clearer when it preserves the intended meaning.",
     ),
     cue(

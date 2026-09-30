@@ -209,6 +209,13 @@ class AcademicSlopCheckerTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0, completed.stderr)
             self.assertIn("| 2 | Methods | Throat-clearing opener |", completed.stdout)
             self.assertEqual(source_path.read_text(encoding="utf-8"), source)
+    def test_copula_avoidance_distinguishes_verb_features_from_domain_nouns(self) -> None:
+        verb_source = "The architecture features a modular pipeline.\n"
+        noun_source = "The classifier uses 19 features for test case prioritization.\n"
+        verb_findings = checker.analyze_text(verb_source, ".txt")
+        noun_findings = checker.analyze_text(noun_source, ".txt")
+        self.assertTrue(any(f.cue == "Possible copula avoidance" for f in verb_findings))
+        self.assertFalse(any(f.cue == "Possible copula avoidance" for f in noun_findings))
 
 
 if __name__ == "__main__":
