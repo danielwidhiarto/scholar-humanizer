@@ -14,6 +14,8 @@ Use these as a first-pass review, then check the surrounding argument and source
 | Inanimate subjects | "The data tells us..." or "The study believes..." | Review literal personification or a hidden actor. "The data suggest" and "Results indicate" are standard academic phrasing. |
 | Repeated sentence rhythm | Several sentences with the same length or syntax | Vary only when the passage becomes monotonous; do not force variation. |
 | Comma-tail cadence | Most sentences end with a comma-attached elaboration: ", indicating that...", ", an approach that...", ", particularly for...", ", with..." | Review the passage: split one tail into its own sentence or drop a redundant one; keep tails that add distinct information. See "Comma-Tail Cadence". |
+| Balanced antithesis | Many "X while -ing Y" mirrors in one passage ("degrades accuracy while inflating costs"), or several contrast pivots in one sentence | Review the cluster: keep contrasts that carry real distinctions; rephrase all but the strongest so the two sides are not perfectly mirrored. See "Balanced Antithesis". |
+| Dramatic register | Intensified verbs and nominals: "plummets", "slashed", "fail catastrophically", "Dominance of X" | Swap to the plainest verb that preserves the claim and its magnitude; keep dramatis personae that the source supports. See "Dramatic Register". |
 | Uniform scaffold cluster | "First/Second/Third" items sharing one sentence shape, or identical connectors opening consecutive paragraphs | Review the whole passage: keep every claim and the listed order; vary sentence shape or drop redundant connectors. A numbered structure itself is kept — see "Numbered Findings and Unnumbered Bullets". |
 | Dramatic one-line ending | "This matters." or "This changes everything." | Keep a concise sentence that adds a result or qualification; trim only empty emphasis. |
 | Arrow-linked outline | Fragments connected by arrows in narrative text | Convert to complete sentence(s) when prose is intended; preserve meaning and order. Keep intentional diagrams and workflows. |
@@ -99,6 +101,32 @@ An elaboration tail — a comma-attached modifier after the main clause (", indi
 
 **Before:** "The survey records weighted averages of 0.97 and 0.98 for all three instruments, indicating that weak items concentrate in a small set of scales, particularly for scales with few questions, an outcome visible in Table 3."
 **After:** "The survey records weighted averages of 0.97 and 0.98 for all three instruments. Weak items concentrate in a small set of scales, especially where scales have few questions; Table 3 lists them."
+
+### Balanced Antithesis
+
+Two mirrored clauses of near-identical shape ("degrades accuracy while inflating computing costs", "cutting overhead while maintaining maximal speed", "it is simultaneously the most expensive and the least effective") are a legitimate rhetorical figure. The cue is density: several mirrored antitheses in one passage, or several contrast pivots stacked in a single sentence.
+
+**Review the cluster:**
+
+- Keep the contrast that carries the passage's key distinction; express the others more plainly (subordinate clause, separate sentence, or plain "and").
+- Never drop one side of a real trade-off. Both claims survive; only the mirroring is relieved.
+- A single antithesis per passage is normal academic rhetoric and is not a cue.
+
+**Before:** "Pruning degrades coverage while inflating per-build latency, and the alternative adds metrics while inflating memory use."
+**After:** "Pruning trades a little coverage for higher per-build latency. The alternative raises memory use instead."
+
+### Dramatic Register
+
+Intensified verbs and event nominals — "plummets to", "slashed", "fail catastrophically", "Collapses of", "Dominance of", "Efficiency synergy" — state a real result with more theater than the numbers require. The claims are usually supported; the register is the cue.
+
+**Review:**
+
+- Swap to the plainest verb that preserves the claim and its magnitude: "plummets" → "drops", "slashed" → "cut", "fail catastrophically" → "break down" (keep "collapse" where the source itself defines a collapse).
+- Review section-heading-style nominals ("Dominance of execution history.") when they dramatize rather than label; keep them when they are the paper's own established terminology.
+- Do not weaken a claim the evidence supports: if the drop is from 0.62 to 0.35, "drops" still tells the truth; the magnitude lives in the numbers, not the verb.
+
+**Before:** "APFDc plummets to 0.3503 — well below random ordering."
+**After:** "APFDc drops to 0.3503, below random ordering."
 
 ### Overloaded Reporting Sentence
 

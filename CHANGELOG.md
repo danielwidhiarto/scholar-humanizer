@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.2 — 2026-10-07
+
+### Added
+
+- Added a "Balanced Antithesis" passage cue in `rules/ai_slop.md`: several mirrored "X while -ing Y" contrasts in one passage, or several contrast pivots stacked in one sentence, are reviewed as a cluster. The contrast carrying the key distinction stays; the rest are expressed plainly. Both sides of a real trade-off always survive.
+- Added a "Dramatic Register" cue: intensified verbs and event nominals ("plummets", "slashed", "fail catastrophically", "Dominance of X") are swapped for the plainest verb that preserves the claim and its magnitude. Established terminology and source-supported collapses are kept.
+- Added before/after and regression examples in `examples/before_after.md` for both cues, plus a Quick Checks table row for each.
+
 ## 1.4.1 — 2026-10-07
 
 ### Added

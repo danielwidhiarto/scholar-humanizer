@@ -3,7 +3,7 @@ name: scholar-humanizer
 description: Improve academic prose while preserving scholarly conventions such as passive voice and hedging.
 license: MIT
 metadata:
-  version: "1.4.1"
+  version: "1.4.2"
 ---
 
 # Scholar Humanizer
@@ -65,7 +65,7 @@ Identify which academic section the text belongs to. If multiple sections, proce
 
 Load `rules/academic_voice.md`, `rules/ai_slop.md`, `rules/narrative_citation.md`, and `references/banned_phrases.md`. Prioritize repeated or high-signal patterns, but judge each in context; one phrase, contrast, short sentence, adverb, hedge, transition, or dash is not a verdict.
 
-- In Results and Discussion, prefer a finding-first paragraph flow — Finding → Meaning → Support → Implication → Consequence — as a default shape, not a template; write the Support beat only when supplied material establishes the prior-work link (see `rules/academic_voice.md`). Review uniform scaffolds — "First/Second/Third" items sharing one sentence shape, or identical connectors opening consecutive paragraphs — as whole-passage clusters, keeping every claim and the listed order. Review a passage where most sentences end with a comma-attached elaboration (", indicating that...") as a cadence cluster: split one tail into its own sentence where it helps, keep tails that add distinct information, and keep Methods hyperparameter sentences intact (see `rules/ai_slop.md`).
+- In Results and Discussion, prefer a finding-first paragraph flow — Finding → Meaning → Support → Implication → Consequence — as a default shape, not a template; write the Support beat only when supplied material establishes the prior-work link (see `rules/academic_voice.md`). Review uniform scaffolds — "First/Second/Third" items sharing one sentence shape, or identical connectors opening consecutive paragraphs — as whole-passage clusters, keeping every claim and the listed order. Review a passage where most sentences end with a comma-attached elaboration (", indicating that...") as a cadence cluster: split one tail into its own sentence where it helps, keep tails that add distinct information, and keep Methods hyperparameter sentences intact (see `rules/ai_slop.md`). Review stacked mirrored antitheses ("X while -ing Y") and intensified verbs ("plummets", "slashed") as register clusters: keep every claim and magnitude, relieve the symmetry, and use the plainest verb that still tells the truth.
 - Keep contrasts that distinguish methods, hypotheses, results, or interpretations. Preserve numbered findings and ordered steps. In running academic prose, prefer paragraphs to related unnumbered bullets only when all claims remain clear; keep bullets for independent items, useful scanning, or required styles.
 - When arrow-separated outline fragments are used as prose, convert them to complete sentence(s), preserving listed order and relationships without inventing causality. Retain arrows in diagrams, formulas, code, and intentional workflows.
 - Revise a pattern only when it is empty, repetitive, misleading, or inconsistent with the section or supplied voice.

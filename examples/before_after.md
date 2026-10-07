@@ -268,6 +268,24 @@ The copula cue targets the verb "features" ("the module features a novel block")
 - **Keep:** Features are extracted from the input volume.
 - **Review (verb sense):** The architecture features a novel attention block. → The architecture includes a novel attention block. (only if a simpler verb preserves the meaning)
 
+### Balanced Antithesis and Dramatic Register
+
+Mirrored "X while -ing Y" contrasts and intensified verbs state real results with more symmetry and theater than the numbers require. Review the density, keep every claim and magnitude.
+
+**Before (stacked antitheses + drama):**
+
+> Pruning degrades coverage while inflating per-build latency. APFDc plummets to 0.3503 — well below random ordering. Bundle C delivers minimal tool dependencies, slashed training resource consumption, and superior prioritization.
+
+**After (same claims and numbers, plainer register):**
+
+> Pruning trades a little coverage for higher per-build latency. APFDc drops to 0.3503, below random ordering. Bundle C needs the fewest tool dependencies, cuts training resource consumption, and matches or exceeds the prior prioritization.
+
+**Keep (single antithesis carrying a real trade-off, established terminology):**
+
+> The intervention increased adherence, not overall attendance.
+
+One mirrored contrast per passage is normal rhetoric. "Collapse" stays when the source itself defines a collapse; the plainest verb must still tell the truth about the magnitude.
+
 ### Comma-Tail Cadence and Overloaded Reporting Sentence
 
 Most sentences ending with a comma-attached elaboration is a passage-level cadence cue; a sentence stacking values, interpretation, and a cross-reference can usually be split. Statistics in these illustrative cases are placeholders from the source.
