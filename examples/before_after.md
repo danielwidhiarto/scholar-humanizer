@@ -268,6 +268,24 @@ The copula cue targets the verb "features" ("the module features a novel block")
 - **Keep:** Features are extracted from the input volume.
 - **Review (verb sense):** The architecture features a novel attention block. → The architecture includes a novel attention block. (only if a simpler verb preserves the meaning)
 
+### Comma-Tail Cadence and Overloaded Reporting Sentence
+
+Most sentences ending with a comma-attached elaboration is a passage-level cadence cue; a sentence stacking values, interpretation, and a cross-reference can usually be split. Statistics in these illustrative cases are placeholders from the source.
+
+**Before (cadence + overloaded sentence):**
+
+> The classification reports also record weighted averages of 0.97 and 0.98 for all three models, indicating that errors concentrate in a small set of families, an outcome visible in Table 5.
+
+**After (same numbers, same pointer, split claims):**
+
+> The classification reports also record weighted averages of 0.97 and 0.98 for all three models. Errors concentrate in a small set of families; Table 5 lists them.
+
+**Keep (Methods parameters — not a cadence tic):**
+
+> All models were trained with AdamW (learning rate 5 × 10−5, weight decay 5 × 10−4) and cosine annealing, with batch size 32.
+
+The parameter sentence is near-irreducible Methods content; do not split it to relieve cadence.
+
 ### Uniform Parallel Scaffold — Vary Rhythm, Keep Claims
 
 "First/Second/Third" items sharing one sentence shape are reviewed as a cluster. Every claim and the order stay; only the symmetry is relieved:

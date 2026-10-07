@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.1 — 2026-10-07
+
+### Added
+
+- Added a "Comma-Tail Cadence" passage cue in `rules/ai_slop.md`: when most sentences in a passage end with a comma-attached elaboration (", indicating that...", ", an approach that...", ", particularly for..."), review the cluster — split one tail into its own sentence or drop a redundant one, keep tails that add distinct information.
+- Added an "Overloaded Reporting Sentence" cue: a sentence stacking a value statement, an interpretation, and a cross-reference can usually be split so each claim keeps its own sentence; all numbers, qualifiers, and references survive the split.
+- Added a Methods false-positive guard in `rules/academic_voice.md`: hyperparameter/configuration sentences ("All models were trained with AdamW (learning rate ...)") are near-irreducible convention, not a cadence tic — do not split or restructure them to relieve cadence.
+- Added before/after and regression examples in `examples/before_after.md` for both cues and the Methods guard, and a Quick Checks table row for comma-tail cadence.
+
 ## 1.4.0 — 2026-10-07
 
 ### Added

@@ -75,7 +75,7 @@ Note for ML/CS prose: the checker's copula cue matches "features" only in its ve
 
 1. **Identifies section type** (Abstract, Methods, Discussion, etc.)
 2. **Applies section-aware guidance** — Methods defaults to passive voice; Discussion often needs appropriate hedging
-3. **Reviews style patterns in context** — vocabulary, formulaic structures, arrow-linked outlines, repetition, and filler are cues, not proof of AI authorship
+3. **Reviews style patterns in context** — vocabulary, formulaic structures, arrow-linked outlines, repetition, comma-tail cadence, and filler are cues, not proof of AI authorship
 3b. **Guides Results/Discussion paragraph flow** — a finding-first shape (Finding → Meaning → Support → Implication → Consequence) as a default, with the Support beat written only when the source establishes the prior-work link
 4. **Respects academic list structure** — preserves numbered findings and can turn related unnumbered bullets into prose when clarity and meaning are preserved
 5. **Supports Audit and Rewrite modes** — audit reports findings without changing the source; rewrite makes minimal prose edits

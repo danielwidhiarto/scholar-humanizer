@@ -148,6 +148,7 @@ Review ornate wording when it obscures meaning. "The utilization of" may become 
 - Passive voice is common; first person is also acceptable where the target style permits it.
 - Reproducibility detail is not filler.
 - Preserve required procedural statements, such as ethics approval, when present.
+- Hyperparameter and configuration sentences ("All models were trained with AdamW (learning rate 5 × 10−5, weight decay 5 × 10−4)...") are near-irreducible: the passive-plus-parameters form is the convention, not a style tic. Do not split or restructure them to relieve cadence; the density is required content.
 
 ### Results and Discussion Paragraph Flow
 

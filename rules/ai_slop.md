@@ -13,6 +13,7 @@ Use these as a first-pass review, then check the surrounding argument and source
 | Adverb clusters | Repeated or stacked intensifiers, including -ly words | Remove only empty or redundant modifiers; keep precise, discipline-standard adverbs. No numeric cap. |
 | Inanimate subjects | "The data tells us..." or "The study believes..." | Review literal personification or a hidden actor. "The data suggest" and "Results indicate" are standard academic phrasing. |
 | Repeated sentence rhythm | Several sentences with the same length or syntax | Vary only when the passage becomes monotonous; do not force variation. |
+| Comma-tail cadence | Most sentences end with a comma-attached elaboration: ", indicating that...", ", an approach that...", ", particularly for...", ", with..." | Review the passage: split one tail into its own sentence or drop a redundant one; keep tails that add distinct information. See "Comma-Tail Cadence". |
 | Uniform scaffold cluster | "First/Second/Third" items sharing one sentence shape, or identical connectors opening consecutive paragraphs | Review the whole passage: keep every claim and the listed order; vary sentence shape or drop redundant connectors. A numbered structure itself is kept — see "Numbered Findings and Unnumbered Bullets". |
 | Dramatic one-line ending | "This matters." or "This changes everything." | Keep a concise sentence that adds a result or qualification; trim only empty emphasis. |
 | Arrow-linked outline | Fragments connected by arrows in narrative text | Convert to complete sentence(s) when prose is intended; preserve meaning and order. Keep intentional diagrams and workflows. |
@@ -85,6 +86,31 @@ Future-work and limitation passages often enumerate steps in a fully parallel sc
 - Keep every claim, the listed order, and the numbering itself.
 - Break the symmetry where the prose allows: one item can open differently ("The Autorun.K confusion comes first."), two shorter items can merge, and some items can drop the explicit ordinal.
 - Removing an item, inventing a detail, or weakening a stated claim is never the fix.
+
+### Comma-Tail Cadence
+
+An elaboration tail — a comma-attached modifier after the main clause (", indicating that X", ", an approach explored in recent work", ", particularly for low-support classes") — is a normal academic construction. The cue is frequency: when most sentences in a passage end this way, the prose takes on a uniform cadence.
+
+**Review the cluster:**
+
+- Keep tails that add distinct information. A Methods parameter tail (", with batch size 32") reports a value, not a cadence tic; Methods parameter sentences stay as written.
+- A single sentence doing several reporting jobs (reporting averages, interpreting them, and pointing to a table) can usually be split without losing any claim.
+- Split one tail into its own sentence, or drop a tail that repeats what a neighboring sentence already says. Never remove a qualification the source makes.
+
+**Before:** "The survey records weighted averages of 0.97 and 0.98 for all three instruments, indicating that weak items concentrate in a small set of scales, particularly for scales with few questions, an outcome visible in Table 3."
+**After:** "The survey records weighted averages of 0.97 and 0.98 for all three instruments. Weak items concentrate in a small set of scales, especially where scales have few questions; Table 3 lists them."
+
+### Overloaded Reporting Sentence
+
+A sentence that performs several reporting jobs at once — reporting values, interpreting them, and pointing to where they live — packs three clauses into one long chain. The claims are usually sound; the density is the cue.
+
+**Review when a sentence stacks all of these:**
+
+- A value statement ("the reports record weighted averages of X and Y")
+- An interpretation ("indicating that errors concentrate...")
+- A cross-reference ("every family below 1.00 appears in Table 5")
+
+Split it so each claim keeps its own sentence. All numbers, qualifiers, and references survive the split; the table pointer often works better as its own short sentence.
 
 ### Forced Triads
 
