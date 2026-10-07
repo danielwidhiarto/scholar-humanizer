@@ -149,7 +149,26 @@ Review ornate wording when it obscures meaning. "The utilization of" may become 
 - Reproducibility detail is not filler.
 - Preserve required procedural statements, such as ethics approval, when present.
 
+### Results and Discussion Paragraph Flow
+
+In Results (when interpretation is permitted) and Discussion, a finding-first paragraph often reads clearly in this order:
+
+1. **Finding** — the result, with its number or statistic.
+2. **Meaning** — what the result shows, in one plain sentence.
+3. **Support** — the prior work it agrees or conflicts with, when such a link exists.
+4. **Implication** — what it means for the study's question or field.
+5. **Consequence** — what the study does or should do next because of it.
+
+**This is a default shape, not a template.** Apply it as:
+
+- **Finding first.** A paragraph that opens with the number or result, rather than restating the analysis, usually reads stronger. "Table 1 shows" remains standard for introducing the result itself.
+- **Beats may be skipped.** Support is written only when supplied material establishes the prior-work link; do not add a citation because the shape calls for one. Consequence may be unnecessary when the implication already states the next step.
+- **Vary the connectors.** Repeating "This means... This is consistent with... As a result..." across consecutive paragraphs is itself a review cue (see `rules/ai_slop.md`); let some sentences follow without an explicit connector.
+- **Reserve interpretation.** When Results and Discussion are separate sections, keep Finding and a brief Meaning in Results; move Support, Implication, and Consequence to Discussion. In combined Results-and-Discussion sections, the full order is expected.
+- **Vary sentence shape within the flow.** Mix short claims with longer qualified sentences; identical sentence rhythm across the beats is a cue to review, not a verdict.
+
 ### Results
+
 - Report findings; reserve interpretation for Discussion when appropriate.
 - "Table 1 shows" is standard.
 - Follow discipline conventions for statistical reporting.

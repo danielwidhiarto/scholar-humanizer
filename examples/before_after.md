@@ -117,7 +117,21 @@ Concrete rewrites organized by section type.
 
 ---
 
-## Regression Checks — Preserve Meaning
+### Results-and-Discussion Paragraph Flow
+
+A finding-first flow — Finding → Meaning → Support → Implication → Consequence — reads clearly, but becomes formulaic when every paragraph repeats the same connectors. These illustrative paragraphs use placeholder statistics from a hypothetical model comparison; in a real rewrite, every number comes from the source.
+
+**Formulaic connectors across paragraphs:**
+
+> The model reached 91% macro-F1 (Table 1). This means the approach is viable. This is consistent with prior work. As a result, we adopt this model. The second model reached 88% macro-F1. This means the gap is small. This is consistent with prior work. As a result, both remain candidates.
+
+**Varied while keeping every claim:**
+
+> The model reached 91% macro-F1 (Table 1), and the second model followed closely at 88%. The gap is small enough that both remain candidates. Because the approach is viable at either setting, we carried both forward into the ablation.
+
+The revision keeps all three statistics and both conclusions, varies sentence length, and lets consecutive sentences connect implicitly instead of through repeated connectors.
+
+### Regression Checks — Preserve Meaning
 
 These examples check for false positives. A pattern match is a reason to inspect context, not an instruction to rewrite.
 
@@ -253,6 +267,32 @@ The copula cue targets the verb "features" ("the module features a novel block")
 - **Keep:** Feature extraction produced 128-dimensional spatial features.
 - **Keep:** Features are extracted from the input volume.
 - **Review (verb sense):** The architecture features a novel attention block. → The architecture includes a novel attention block. (only if a simpler verb preserves the meaning)
+
+### Uniform Parallel Scaffold — Vary Rhythm, Keep Claims
+
+"First/Second/Third" items sharing one sentence shape are reviewed as a cluster. Every claim and the order stay; only the symmetry is relieved:
+
+**Before (uniform scaffold):**
+
+```text
+First, the Autorun.K failure should be investigated through analysis of
+the underlying binaries. Second, the Grad-CAM analysis should be extended
+with image-to-offset mapping. Third, significance testing over more folds
+is needed. Finally, evaluation on cross-dataset samples would test
+whether the accuracy holds.
+```
+
+**After (same four claims, same order, varied rhythm):**
+
+```text
+The Autorun.K confusion comes first: analysis of the underlying binaries
+should show whether the families genuinely share structure. The Grad-CAM
+analysis needs the same kind of extension — an image-to-offset mapping.
+Any ranking should also wait for significance testing over more folds.
+Finally, cross-dataset evaluation would test whether the accuracy holds.
+```
+
+The revision keeps all four items in order, does not invent a reason for the binary analysis, and varies sentence shape and openers. If the author's sample or target style favors strict parallel scaffolds, keep them.
 
 ### Narrative Citation Template — Cluster, Not Verdict
 

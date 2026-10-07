@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.4.0 — 2026-10-07
+
+### Added
+
+- Added a Results/Discussion paragraph-flow default in `rules/academic_voice.md`: Finding → Meaning → Support → Implication → Consequence. Framed as a default shape, not a template — beats may be skipped, and the Support beat is written only when supplied material establishes the prior-work link (no forced citations). Separate Results keep Finding + brief Meaning and move interpretation to Discussion; combined Results-and-Discussion sections use the full order.
+- Added a "Uniform Parallel Scaffold" passage cue in `rules/ai_slop.md`: fully parallel "First/Second/Third" enumerations sharing one sentence shape, and identical connectors opening consecutive paragraphs, are reviewed as whole-passage clusters. Claims, order, and numbering are always kept; relief comes from varied openers, merged items, or dropped redundant ordinals — never from removing content.
+- Added before/after examples in `examples/before_after.md` for the paragraph flow and a scaffold regression case, plus a Quick Checks table row.
+
+### Changed
+
+- Registered the flow guidance in SKILL.md step 4, the README "What It Does" list and Section-Aware Rules, and the AGENTS.md-mandated cross-references between `rules/academic_voice.md` and `rules/ai_slop.md`.
+
 ## 1.3.0 — 2026-09-29
 
 ### Added

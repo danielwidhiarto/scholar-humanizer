@@ -13,6 +13,7 @@ Use these as a first-pass review, then check the surrounding argument and source
 | Adverb clusters | Repeated or stacked intensifiers, including -ly words | Remove only empty or redundant modifiers; keep precise, discipline-standard adverbs. No numeric cap. |
 | Inanimate subjects | "The data tells us..." or "The study believes..." | Review literal personification or a hidden actor. "The data suggest" and "Results indicate" are standard academic phrasing. |
 | Repeated sentence rhythm | Several sentences with the same length or syntax | Vary only when the passage becomes monotonous; do not force variation. |
+| Uniform scaffold cluster | "First/Second/Third" items sharing one sentence shape, or identical connectors opening consecutive paragraphs | Review the whole passage: keep every claim and the listed order; vary sentence shape or drop redundant connectors. A numbered structure itself is kept — see "Numbered Findings and Unnumbered Bullets". |
 | Dramatic one-line ending | "This matters." or "This changes everything." | Keep a concise sentence that adds a result or qualification; trim only empty emphasis. |
 | Arrow-linked outline | Fragments connected by arrows in narrative text | Convert to complete sentence(s) when prose is intended; preserve meaning and order. Keep intentional diagrams and workflows. |
 | Unnumbered bullets in narrative | Related subpoints listed inside running academic prose | Prefer a coherent paragraph when every claim remains clear; keep bullets for independent or scannable items. Preserve numbered findings and ordered steps. |
@@ -74,6 +75,16 @@ Review a contrast when it creates a false opposition or adds drama without infor
 **Meaningful contrast — keep:**
 
 "The intervention increased adherence, not overall attendance."
+
+### Uniform Parallel Scaffold
+
+Future-work and limitation passages often enumerate steps in a fully parallel scaffold — "First, X should be investigated. Second, Y should be extended. Third, Z is needed." — where every item shares one sentence shape (problem → modal + passive verb → expected outcome) and one opener. The content is usually sound; the uniform rhythm across many items is the cue.
+
+**Review the cluster, not each sentence:**
+
+- Keep every claim, the listed order, and the numbering itself.
+- Break the symmetry where the prose allows: one item can open differently ("The Autorun.K confusion comes first."), two shorter items can merge, and some items can drop the explicit ordinal.
+- Removing an item, inventing a detail, or weakening a stated claim is never the fix.
 
 ### Forced Triads
 
